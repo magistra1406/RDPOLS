@@ -1,0 +1,310 @@
+﻿@page "/Detailrdp/"
+@attribute [StreamRendering]
+
+<AuthorizeView>
+    <Authorized>
+        @code {
+        [Parameter]
+        public int No { get; set; } // Properti untuk menerima No dari URL
+
+        private LelangData? rdpData;
+
+        protected override void OnParametersSet()
+        {
+            // Simulasi mendapatkan data dari nomor RDP
+            rdpData = allData.FirstOrDefault(rdp => rdp.No == No);
+
+            if (rdpData == null)
+            {
+                // Tampilkan pesan jika data tidak ditemukan
+                rdpData = new LelangData
+                {
+                    No = 0,
+                    AlamatRumah = "Data tidak ditemukan",
+                    Points = 0,
+                    ImageUrl = "/images/house1.png"
+                };
+            }
+        }
+
+        private LelangData[] allData = new[] {
+        new LelangData { No = 1, AlamatRumah = "Jl. Kalimantan No.1", Points = 150, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 2, AlamatRumah = "Jl. Bali No.2", Points = 250, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 3, AlamatRumah = "Jl. Sudirman No.3", Points = 100, ImageUrl = "/images/house1.png" }
+        };
+
+        public class LelangData
+        {
+            public int No { get; set; }
+            public string AlamatRumah { get; set; }
+            public int Points { get; set; }
+            public string ImageUrl { get; set; }
+        }
+
+        // Modal control
+        private bool showModal = false;
+        private string? selectedImageUrl;
+
+        private void ShowImage(string imageUrl)
+        {
+            selectedImageUrl = imageUrl;
+            showModal = true;
+        }
+
+        private void CloseModal()
+        {
+            showModal = false;
+            selectedImageUrl = null;
+        }
+        }
+
+        <div class="rdp-detail-container">
+            <!-- Page Title and Date -->
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Pelelangan RDP Saat Ini</h1>
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                    <span>
+                        <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                    </span>
+                    @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                </span>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Main Image -->
+                <div class="main-image">
+                    <img src="@rdpData.ImageUrl" alt="Gambar Rumah" class="rdp-image" />
+                </div>
+
+                <!-- Ranking List -->
+                <div class="ranking-list">
+                    <h4>Peringkat Pendaftar</h4>
+                    <ul class="ranking-items">
+                        <li>
+                            <span class="name">Dayinta Palupi (2080)</span>
+                            <span class="points">5408,90 Points</span>
+                            <span class="icon">🥇</span>
+                        </li>
+                        <li>
+                            <span class="name">Dinda Rachma (2056)</span>
+                            <span class="points">5246,60 Points</span>
+                        </li>
+                        <li>
+                            <span class="name">Ramadhan Surya H (2070)</span>
+                            <span class="points">4868,50 Points</span>
+                        </li>
+                        <li>
+                            <span class="name">Moh. Magistra J (2048)</span>
+                            <span class="points">4255,20 Points</span>
+                        </li>
+                        <li>
+                            <span class="name">Mauliza Maul (2067)</span>
+                            <span class="points">4250,20 Points</span>
+                        </li>
+                        <li>
+                            <span class="name">Lupi Belo Surya (2010)</span>
+                            <span class="points">4222,00 Points</span>
+                        </li>
+                        <li>
+                            <span class="name">Jahfal Handika (2000)</span>
+                            <span class="points">4155,20 Points</span>
+                        </li>
+                    </ul>
+                    <div class="auction-period">*Periode Lelang 30/09/2024 – 15/10/2024</div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                @foreach (var item in allData)
+                {
+                    <img src="@item.ImageUrl" alt="Gallery Image" class="gallery-item" @onclick="() => ShowImage(item.ImageUrl)">
+                }
+            </div>
+
+            <!-- Image Modal -->
+            @if (showModal)
+            {
+                <div class="modal" @onclick="CloseModal">
+                    <div class="modal-content" @onclick:stopPropagation>
+                        <span class="close" @onclick="CloseModal">&times;</span>
+                        <img src="@selectedImageUrl" alt="Small Image" class="modal-image" />
+                    </div>
+                </div>
+            }
+            <!-- Detail Section -->
+            <div class="detail-button-container">
+                <div class="detail-section">
+                    <table>
+                        <tr>
+                            <td><strong>Alamat</strong></td>
+                            <td>: Komperta Gunung Simping</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tipe RDP</strong></td>
+                            <td>: 46</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tipe Cluster</strong></td>
+                            <td>: 3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jenis Hunian</strong></td>
+                            <td>: Pekerja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kondisi</strong></td>
+                            <td>: Layak</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Terakhir Renovasi</strong></td>
+                            <td>: 1 Januari 2024</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fasilitas</strong></td>
+                            <td>: Mesin Cuci</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Overall Container */
+            .rdp-detail-container {
+                padding: 20px;
+            }
+
+            /* Main Content Layout */
+            .main-content {
+                display: flex;
+                justify-content: space-between; /* Align image and ranking list */
+                margin-bottom: 20px;
+            }
+
+            /* Main Image Section */
+            .main-image {
+                flex: 1; /* Main image takes up 1 part of the flex container */
+                margin-right: 20px; /* Space between image and ranking list */
+            }
+
+                .main-image img {
+                    width: 100%; /* Ensure the image takes full width of its container */
+                    height: auto; /* Maintain aspect ratio */
+                }
+
+            /* Ranking List */
+            .ranking-list {
+                width: 30%; /* Set width for the ranking list */
+                background-color: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                font-size: 14px;
+            }
+
+                .ranking-list h4 {
+                    margin-bottom: 15px;
+                }
+
+            .ranking-items {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .ranking-items li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 0;
+                }
+
+                .ranking-items .name {
+                    font-weight: bold;
+                }
+
+                .ranking-items .points {
+                    color: #555;
+                }
+
+                .ranking-items .icon {
+                    font-size: 18px;
+                    color: gold; /* Gold for the first rank */
+                }
+
+            .auction-period {
+                margin-top: 10px;
+                font-size: 12px;
+                color: #888;
+            }
+
+            /* Detail Section Styling */
+            .detail-section {
+                background-color: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+
+            /* Image Gallery */
+            .image-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .gallery-item {
+                width: 100%;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            /* Modal Styling */
+            .modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .modal-content {
+                position: relative;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 90%;
+                max-height: 90%;
+                overflow: auto;
+            }
+
+            .modal-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                color: red;
+            }
+        </style>
+    </Authorized>
+    <NotAuthorized>
+        <h3>Anda belum login.</h3>
+    </NotAuthorized>
+</AuthorizeView>

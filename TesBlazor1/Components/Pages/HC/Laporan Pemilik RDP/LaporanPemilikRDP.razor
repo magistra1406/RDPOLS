@@ -1,0 +1,197 @@
+﻿@page "/admin/LaporanPemilik"
+@attribute [StreamRendering]
+@inject IJSRuntime js
+
+<PageTitle>Laporan Pemilik</PageTitle>
+
+<style>
+    .custom-file-input::-webkit-file-upload-button {
+        background-color: #358DC7;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .custom-file-input::file-selector-button {
+        background-color: #358DC7;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .custom-file-input::-moz-file-upload-button {
+        background-color: #358DC7;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <h1>Laporan Pemilik RDP</h1>
+
+            <!-- Date and Add RDP Button -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <!-- Date -->
+                    <span class="badge bg-light text-dark mt-2">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- Tabel Data RDP -->
+            <table class="table table-striped table-bordered text-center small mb-md-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Alamat</th>
+                        <th>No RDP</th>
+                        <th>Tipe RDP</th>
+                        <th>Cluster</th>
+                        <th>NoPek</th>
+                        <th>Nama Pegawai</th>
+                        <th>Keterangan</th>
+                        <th>Bukti</th>
+                        <th>Tindak Lanjut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var rdp in filteredData)
+                    {
+                        <tr class="@rdp.RowClass">
+                            <td>@rdp.No</td>
+                            <td>@rdp.Alamat</td>
+                            <td>@rdp.NoRDP</td>
+                            <td>@rdp.TipeRDP</td>
+                            <td>@rdp.Cluster</td>
+                            <td>@rdp.NoPek</td>
+                            <td>@rdp.NamaPegawai</td>
+                            <td>@rdp.Keterangan</td>
+                            <td class="table-bukti">
+                                @foreach (var bukti in rdp.Bukti)
+                                {
+                                    <a href="@bukti" target="_blank" class="d-block">
+                                        <div class="file-container">
+                                            <span class="bi bi-filetype-jpg file-icon"></span>
+                                            <span class="file-name">@Path.GetFileName(bukti)</span>
+                                        </div>
+                                    </a>
+                                }
+                            </td>
+                            <td>
+                                <DialogPemilik ></DialogPemilik>
+                            </td>
+
+                            <!-- Modal DialogPemilik -->
+                            <div class="modal fade" id="rdp-pemilik-dialog-@rdp.No" tabindex="-1" aria-labelledby="rdpPemilikLabel-@rdp.No" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="rdpPemilikLabel-@rdp.No">Dialog Pemilik</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label class="fw-bold">Alamat</label>
+                                                    <input type="text" class="form-control" @bind="CurrentRdp.Alamat" readonly />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="fw-bold">Keterangan</label>
+                                                    <input type="text" class="form-control" @bind="CurrentRdp.Keterangan" readonly />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="fw-bold">No RDP</label>
+                                                    <input type="text" class="form-control" @bind="CurrentRdp.NoRDP" readonly />
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                            <button type="button" class="btn btn-primary" @onclick="() => EditRDP(CurrentRdp)">Kirim</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private List<RDPModel> rdpData = new List<RDPModel>
+    {
+        new RDPModel { No = 1, Alamat = "Gunung Simping", NoRDP = 301, TipeRDP = "Perumahan", Cluster = "A", NoPek = 2056, NamaPegawai = "Kerin Cecillia Belo", Keterangan = "Atap bagian depan bocor sehingga plafon kamar tidur rembes", Bukti = new List<string> { "20240827_090952.jpg", "20240827_090953.jpg" }, RowClass = "table-hijau" },
+        new RDPModel { No = 2, Alamat = "Gunung Simping", NoRDP = 301, TipeRDP = "Perumahan", Cluster = "A", NoPek = 2056, NamaPegawai = "Kerin Cecillia Belo", Keterangan = "Atap bagian depan bocor sehingga plafon kamar tidur rembes", Bukti = new List<string> { "20240827_090952.jpg", "20240827_090953.jpg" }, RowClass = "table-hijau" },
+        new RDPModel { No = 3, Alamat = "Gunung Simping", NoRDP = 301, TipeRDP = "Perumahan", Cluster = "A", NoPek = 2056, NamaPegawai = "Kerin Cecillia Belo", Keterangan = "Atap bagian depan bocor sehingga plafon kamar tidur rembes", Bukti = new List<string> { "20240827_090952.jpg", "20240827_090953.jpg" }, RowClass = "table-secondary" }
+    };
+
+    private List<RDPModel> filteredData;
+
+    protected override void OnInitialized()
+    {
+        filteredData = rdpData;
+    }
+
+    private RDPModel CurrentRdp = new RDPModel();
+
+    private async void OpenEditModal(RDPModel rdp)
+    {
+        // Salin data dari model yang dipilih
+        CurrentRdp = new RDPModel
+            {
+                No = rdp.No,
+                Alamat = rdp.Alamat,
+                NoRDP = rdp.NoRDP,
+                TipeRDP = rdp.TipeRDP,
+                Cluster = rdp.Cluster,
+                NoPek = rdp.NoPek,
+                NamaPegawai = rdp.NamaPegawai,
+                Keterangan = rdp.Keterangan,
+                Bukti = rdp.Bukti,
+                RowClass = rdp.RowClass
+            };
+
+        // Tunda untuk memastikan modal dirender
+        await Task.Delay(100);
+
+        // Tampilkan modal dengan ID yang sesuai
+        await js.InvokeVoidAsync("$('#rdp-pemilik-dialog-" + rdp.No + "').modal('show')");
+    }
+
+    private void EditRDP(RDPModel rdp)
+    {
+        Console.WriteLine($"Editing RDP {rdp.No}");
+    }
+
+    public class RDPModel
+    {
+        public int No { get; set; }
+        public string Alamat { get; set; }
+        public int NoRDP { get; set; }
+        public string TipeRDP { get; set; }
+        public string Cluster { get; set; }
+        public int NoPek { get; set; }
+        public string NamaPegawai { get; set; }
+        public string Keterangan { get; set; }
+        public List<string> Bukti { get; set; }
+        public string RowClass { get; set; }
+    }
+}

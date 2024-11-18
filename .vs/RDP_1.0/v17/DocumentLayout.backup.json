@@ -1,0 +1,851 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\tesblazor1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\tesblazor1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\models\\entities\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\models\\entities\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\dialognotif.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\dialognotif.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\riwayatbid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\riwayatbid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\lelangrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\lelangrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\rdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\rdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\pengembalian kunci rdp\\pengembalian kunci rdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\pengembalian kunci rdp\\pengembalian kunci rdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\detailrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\detailrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\laporan rdp\\laporanpemilikrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\laporan rdp\\laporanpemilikrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\laporan rdp\\dialogtambahlaporan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\laporan rdp\\dialogtambahlaporan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\laporan rdp\\dialogpemilik-pegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\laporan rdp\\dialogpemilik-pegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\dialoginfo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\pegawai\\pelelangan rdp\\dialoginfo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\dialogtambahrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\dialogtambahrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\rdptersedia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\rdptersedia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\datardphc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\datardphc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\lelang\\lelang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\lelang\\lelang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\detailrdplayak.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\detailrdplayak.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\lelang\\lanjutannonlelangpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\lelang\\lanjutannonlelangpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\lelang\\nonlelangpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\lelang\\nonlelangpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\lelang\\detailrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\lelang\\detailrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\account\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\account\\logout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\account\\accessdenied.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\account\\accessdenied.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\kunci\\penyerahankuncirdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\kunci\\penyerahankuncirdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\laporan rdp\\laporanrdphc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\laporan rdp\\laporanrdphc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\dialogdurasi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\dialogdurasi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data pegawai\\datapegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data pegawai\\datapegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\perbaruirdp1.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\perbaruirdp1.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\dialogtambahfasilitas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\dialogtambahfasilitas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\perbaruirdp2.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\perbaruirdp2.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\data fasilitas\\datafasilitas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\data fasilitas\\datafasilitas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\kuncirdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\kuncirdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\lelang\\pemenanglelang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\lelang\\pemenanglelang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\30d3e4453ca9c6a12e830f1e6def24917a232895df275653c65e9f5f0d160498\\src\\libraries\\System.Private.CoreLib\\src\\System\\Diagnostics\\StackTrace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data pegawai\\dialogpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data pegawai\\dialogpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\laporan pemilik rdp\\laporanpemilikrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\laporan pemilik rdp\\laporanpemilikrdp.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data rdp\\datardphc.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data rdp\\datardphc.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|d:\\semester 5 pertamina\\project\\magis\\tesblazor1\\tesblazor1\\components\\pages\\hc\\data pegawai\\tambahpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3740E6-7387-4ABE-9370-1899F3140346}|TesBlazor1\\TesBlazor1.csproj|solutionrelative:tesblazor1\\components\\pages\\hc\\data pegawai\\tambahpegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SEMESTER 5 PERTAMINA\\file anak2\\up 10okt ver3\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\NonLelangPegawai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 158,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TesBlazor1",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\TesBlazor1.csproj",
+              "RelativeDocumentMoniker": "TesBlazor1\\TesBlazor1.csproj",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\TesBlazor1.csproj",
+              "RelativeToolTip": "TesBlazor1\\TesBlazor1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-18T07:15:28.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Program.cs",
+              "RelativeDocumentMoniker": "TesBlazor1\\Program.cs",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Program.cs",
+              "RelativeToolTip": "TesBlazor1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T06:51:41.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Models\\Entities\\UserAccount.cs",
+              "RelativeDocumentMoniker": "TesBlazor1\\Models\\Entities\\UserAccount.cs",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Models\\Entities\\UserAccount.cs",
+              "RelativeToolTip": "TesBlazor1\\Models\\Entities\\UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:34:15.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:37:50.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "TesBlazor1\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "TesBlazor1\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T03:09:55.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDP.razor",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T01:12:28.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pengembalian Kunci RDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pengembalian Kunci RDP\\Pengembalian Kunci RDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Pengembalian Kunci RDP\\Pengembalian Kunci RDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pengembalian Kunci RDP\\Pengembalian Kunci RDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Pengembalian Kunci RDP\\Pengembalian Kunci RDP.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T06:08:25.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LelangRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\LelangRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\LelangRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\LelangRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\LelangRDP.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:16:22.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DetailRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DetailRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DetailRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DetailRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DetailRDP.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:35:31.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DialogNotif.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\DialogNotif.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\DialogNotif.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\DialogNotif.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\DialogNotif.razor",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T00:35:03.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Profile.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Profile.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Profile.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Profile.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Profile.razor",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwFAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T00:28:24.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T06:13:28.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\Login.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Account\\Login.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\Login.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Account\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T06:51:34.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LaporanPemilikRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\LaporanPemilikRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\LaporanPemilikRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\LaporanPemilikRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\LaporanPemilikRDP.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T06:15:13.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RiwayatBID.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\RiwayatBID.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\RiwayatBID.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\RiwayatBID.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\RiwayatBID.razor",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAmwJMBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:17:16.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DialogTambahLaporan.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogTambahLaporan.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogTambahLaporan.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogTambahLaporan.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogTambahLaporan.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T06:22:05.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DialogPemilik-Pegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogPemilik-Pegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogPemilik-Pegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogPemilik-Pegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Laporan RDP\\DialogPemilik-Pegawai.razor",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T06:15:00.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DialogInfo.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DialogInfo.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DialogInfo.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DialogInfo.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Pegawai\\Pelelangan RDP\\DialogInfo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:36:09.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RDPTersedia.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDPTersedia.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDPTersedia.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDPTersedia.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\RDPTersedia.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T00:15:41.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DialogTambahRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahRDP.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:11:47.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DataRDPhc.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T05:33:15.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Lelang.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\Lelang.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\Lelang.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\Lelang.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\Lelang.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:04:23.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DetailRDPLayak.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DetailRDPLayak.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DetailRDPLayak.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DetailRDPLayak.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DetailRDPLayak.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T08:44:59.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LanjutanNonLelangPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\LanjutanNonLelangPegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\LanjutanNonLelangPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\LanjutanNonLelangPegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\LanjutanNonLelangPegawai.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T04:49:18.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NonLelangPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\NonLelangPegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\NonLelangPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\NonLelangPegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\NonLelangPegawai.razor",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAQwCsBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T00:47:35.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Detailrdp.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\Detailrdp.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\Detailrdp.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\Detailrdp.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\Detailrdp.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAKcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T07:05:39.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:45:27.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:45:29.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\_Imports.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\_Imports.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T06:51:58.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\App.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\App.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\App.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T06:52:04.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Routes.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Routes.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T05:34:06.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Logout.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\Logout.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Account\\Logout.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\Logout.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Account\\Logout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T00:26:55.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AccessDenied.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\AccessDenied.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Account\\AccessDenied.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Account\\AccessDenied.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Account\\AccessDenied.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T00:26:52.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PenyerahanKunciRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Kunci\\PenyerahanKunciRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Kunci\\PenyerahanKunciRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Kunci\\PenyerahanKunciRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Kunci\\PenyerahanKunciRDP.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T04:20:07.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LaporanRDPhc.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Laporan RDP\\LaporanRDPhc.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Laporan RDP\\LaporanRDPhc.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Laporan RDP\\LaporanRDPhc.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Laporan RDP\\LaporanRDPhc.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:08:34.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DialogDurasi.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogDurasi.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogDurasi.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogDurasi.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogDurasi.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T06:33:21.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DataPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DataPegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DataPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DataPegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DataPegawai.razor",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwCYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T07:39:48.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\appsettings.json",
+              "RelativeDocumentMoniker": "TesBlazor1\\appsettings.json",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\appsettings.json",
+              "RelativeToolTip": "TesBlazor1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-07T05:35:39.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PerbaruiRDP1.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP1.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP1.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP1.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP1.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T00:52:11.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DataFasilitas.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Data Fasilitas\\DataFasilitas.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\Data Fasilitas\\DataFasilitas.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\Data Fasilitas\\DataFasilitas.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\Data Fasilitas\\DataFasilitas.razor",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAcwLcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T00:50:43.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DialogTambahFasilitas.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahFasilitas.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahFasilitas.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahFasilitas.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DialogTambahFasilitas.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T00:57:46.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PerbaruiRDP2.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP2.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP2.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP2.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\PerbaruiRDP2.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAPMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T00:53:49.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "KunciRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\KunciRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\KunciRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\KunciRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\KunciRDP.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T06:48:37.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PemenangLelang.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\PemenangLelang.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\PemenangLelang.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Lelang\\PemenangLelang.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Lelang\\PemenangLelang.razor",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAABcBAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T04:55:43.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DialogPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DialogPegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DialogPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DialogPegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\DialogPegawai.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T06:50:15.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "LaporanPemilikRDP.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Laporan Pemilik RDP\\LaporanPemilikRDP.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Laporan Pemilik RDP\\LaporanPemilikRDP.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Laporan Pemilik RDP\\LaporanPemilikRDP.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Laporan Pemilik RDP\\LaporanPemilikRDP.razor",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAYwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:08:38.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "StackTrace.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\30d3e4453ca9c6a12e830f1e6def24917a232895df275653c65e9f5f0d160498\\src\\libraries\\System.Private.CoreLib\\src\\System\\Diagnostics\\StackTrace.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\30d3e4453ca9c6a12e830f1e6def24917a232895df275653c65e9f5f0d160498\\src\\libraries\\System.Private.CoreLib\\src\\System\\Diagnostics\\StackTrace.cs [Read Only]",
+              "ViewState": "AgIAAM8AAAAAAAAAAAD4v+AAAAARAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T07:50:02.669Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NonLelangPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\file anak2\\up 10okt ver3\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\NonLelangPegawai.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\file anak2\\up 10okt ver3\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\NonLelangPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\file anak2\\up 10okt ver3\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\NonLelangPegawai.razor",
+              "RelativeToolTip": "..\\..\\..\\file anak2\\up 10okt ver3\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\NonLelangPegawai.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:21:23.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DataRDPhc.razor.css",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor.css",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor.css",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor.css",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data RDP\\DataRDPhc.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-29T02:36:25.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TambahPegawai.razor",
+              "DocumentMoniker": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\TambahPegawai.razor",
+              "RelativeDocumentMoniker": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\TambahPegawai.razor",
+              "ToolTip": "D:\\SEMESTER 5 PERTAMINA\\PROJECT\\MAGIS\\TesBlazor1\\TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\TambahPegawai.razor",
+              "RelativeToolTip": "TesBlazor1\\Components\\Pages\\HC\\Data Pegawai\\TambahPegawai.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T01:06:45.573Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

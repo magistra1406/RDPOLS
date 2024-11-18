@@ -1,0 +1,212 @@
+﻿@page "/kunciRDP"
+@attribute [StreamRendering]
+
+<PageTitle> Penyerahan Kunci</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Penyerahan Kunci</h1>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+            <!-- Search and Filter Section -->
+            <div class="d-flex align-items-center gap-2 mt-4 justify-content-between">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Cari RDP" />
+                </div>
+                <div class="ms-auto d-flex align-items-center gap-2">
+                    <div class="btn-group me-2">
+                        <button class="btn btn-light me-2" style="width: 150px;" @onclick='() => FilterByCondition("Close")'>Close</button>
+                        <button class="btn btn-light me-2" style="width: 150px;" @onclick='() => FilterByCondition("Open")'>Open</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards and Table -->
+            <div class="combined-section mt-4">
+                <div class="card-lelang mb-0">
+                    <p>Gunung Simping (120)</p>
+                    <span>
+                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                    </span>
+                </div>
+
+                <!-- Table with Data Rows -->
+                <div class="table-container">
+                    <table class="table text-center m-0">
+                        <thead style="background-color: black; color: white;">
+                            <tr style="font-weight: normal; font-size: 14px">
+                                <th>No</th>
+                                <th>Alamat</th>
+                                <th>No RDP</th>
+                                <th>Tipe</th>
+                                <th>Kondisi</th>
+                                <th>Nopek</th>
+                                <th>Nama</th>
+                                <th>Status</th>
+                                <th>Tanggal Peminjaman</th>
+                                <th>Tanggal Pengembalian</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var rdp in rdpData)
+                            {
+                                <tr style="background-color: @rdp.RowColor; font-size: 14px; position: relative;">
+                                    <td>@rdp.No</td>
+                                    <td>@rdp.Alamat</td>
+                                    <td>@rdp.NoRDP</td>
+                                    <td>@rdp.Tipe</td>
+                                    <td>@rdp.Kondisi</td>
+                                    <td>@rdp.Nopek</td>
+                                    <td>@rdp.Nama</td>
+                                    <td>@rdp.Status</td>
+                                    <td>@rdp.TanggalPeminjaman</td>
+                                    <td>@rdp.TanggalPengembalian</td>
+                                    <td>
+                                        <button class="btn btn-light"><span class="bi bi-upload" aria-hidden="true"></span></button>
+                                        <button class="btn btn-light"><span class="bi bi-check2" aria-hidden="true"></span></button>
+                                        <button class="btn btn-light"><span class="bi bi-eye" aria-hidden="true"></span></button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Additional Cards with icons on the right -->
+            <div class="card-lelang mt-4">
+                <p>Donan (4)</p>
+                <span>
+                    <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                </span>
+            </div>
+            <div class="card-lelang mt-4">
+                <p>Sidanegara (9)</p>
+                <span>
+                    <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                </span>
+            </div>
+            <div class="card-lelang mt-4">
+                <p>Apartemen (20)</p>
+                <span>
+                    <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                </span>
+            </div>
+        </div>
+
+        @code {
+        private List<RDPModel> rdpData = new List<RDPModel>
+        {
+        new RDPModel { No = 1, Alamat = "Gunung Simping", NoRDP = 1, Tipe = "A", Kondisi = "Layak", Nopek = 2056, Nama = "Kerin Cecillia", Status = "Close", TanggalPeminjaman = "dd/mm/yy", TanggalPengembalian = "dd/mm/yy", RowColor = "#EDFFC3" },
+        new RDPModel { No = 2, Alamat = "Gunung Simping", NoRDP = 2, Tipe = "A", Kondisi = "Layak", Nopek = 2090, Nama = "Kerin Cecillia", Status = "Open", TanggalPeminjaman = "dd/mm/yy", TanggalPengembalian = "dd/mm/yy", RowColor = "#FFE3E4" },
+        new RDPModel { No = 3, Alamat = "Gunung Simping", NoRDP = 3, Tipe = "A", Kondisi = "Layak", Nopek = 2028, Nama = "Dinda Rachma", Status = "Open", TanggalPeminjaman = "dd/mm/yy", TanggalPengembalian = "dd/mm/yy", RowColor = "#FFE3E4" },
+        new RDPModel { No = 4, Alamat = "Gunung Simping", NoRDP = 4, Tipe = "A", Kondisi = "Layak", Nopek = 2057, Nama = "Dinda Rachma", Status = "Close", TanggalPeminjaman = "dd/mm/yy", TanggalPengembalian = "dd/mm/yy", RowColor = "#EDFFC3" }
+        };
+
+        private void FilterByCondition(string condition)
+        {
+            // Implement filter logic here (e.g., filter rdpData based on the condition)
+        }
+
+        public class RDPModel
+        {
+            public int No { get; set; }
+            public string Alamat { get; set; }
+            public int NoRDP { get; set; }
+            public string Tipe { get; set; }
+            public string Kondisi { get; set; }
+            public int Nopek { get; set; }
+            public string Nama { get; set; }
+            public string Status { get; set; }
+            public string TanggalPeminjaman { get; set; }
+            public string TanggalPengembalian { get; set; }
+            public string RowColor { get; set; }
+            public bool IsSelected { get; set; } // Property to bind to the checkbox
+        }
+        }
+
+        <style>
+            .card-lelang {
+                background-color: #358DC7;
+                border-radius: 15px 15px 0 0;
+                padding: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .card-lelang p {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+            .table-container {
+                overflow-x: auto;
+                margin-bottom: 10px;
+            }
+
+            .action-checkbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .table th, .table td {
+                vertical-align: middle;
+            }
+
+            .card-lelang img {
+                width: 18px;
+                height: 18px;
+                cursor: pointer; /* Cursor pointer for interaction */
+            }
+
+            .bi-upload {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-upload'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M.5%209.9a.5.5%200%200%201%20.5.5v2.5a1%201%200%200%200%201%201h12a1%201%200%200%200%201-1v-2.5a.5.5%200%200%201%201%200v2.5a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2v-2.5a.5.5%200%200%201%20.5-.5'/%3E%3Cpath%20d='M7.646%201.146a.5.5%200%200%201%20.708%200l3%203a.5.5%200%200%201-.708.708L8.5%202.707V11.5a.5.5%200%200%201-1%200V2.707L5.354%204.854a.5.5%200%201%201-.708-.708z'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-check2 {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-check2'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M13.854%203.646a.5.5%200%200%201%200%20.708l-7%207a.5.5%200%200%201-.708%200l-3.5-3.5a.5.5%200%201%201%20.708-.708L6.5%2010.293l6.646-6.647a.5.5%200%200%201%20.708%200'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-eye {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-eye'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M16%208s-3-5.5-8-5.5S0%208%200%208s3%205.5%208%205.5S16%208%2016%208M1.173%208a13%2013%200%200%201%201.66-2.043C4.12%204.668%205.88%203.5%208%203.5s3.879%201.168%205.168%202.457A13%2013%200%200%201%2014.828%208q-.086.13-.195.288c-.335.48-.83%201.12-1.465%201.755C11.879%2011.332%2010.119%2012.5%208%2012.5s-3.879-1.168-5.168-2.457A13%2013%200%200%201%201.172%208z'/%3E%3Cpath%20d='M8%205.5a2.5%202.5%200%201%200%200%205%202.5%202.5%200%200%200%200-5M4.5%208a3.5%203.5%200%201%201%207%200%203.5%203.5%200%200%201-7%200'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+        </style>
+    </Authorized>
+</AuthorizeView>

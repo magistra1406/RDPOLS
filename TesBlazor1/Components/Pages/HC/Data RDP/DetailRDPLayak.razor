@@ -1,0 +1,328 @@
+﻿@page "/rdp-detail"
+
+@code {
+    [Parameter]
+    public int No { get; set; }
+
+    private LelangData? rdpData;
+
+    protected override void OnParametersSet()
+    {
+        rdpData = allData.FirstOrDefault(rdp => rdp.No == No);
+
+        if (rdpData == null)
+        {
+            rdpData = new LelangData
+                {
+                    No = 0,
+                    AlamatRumah = "Data tidak ditemukan",
+                    Points = 0,
+                    ImageUrl = "/images/house1.png"
+                };
+        }
+    }
+
+    private LelangData[] allData = new[]
+    {
+        new LelangData { No = 1, AlamatRumah = "Jl. Kalimantan No.1", Points = 150, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 2, AlamatRumah = "Jl. Bali No.2", Points = 250, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 3, AlamatRumah = "Jl. Sudirman No.3", Points = 100, ImageUrl = "/images/house1.png" }
+    };
+
+    public class LelangData
+    {
+        public int No { get; set; }
+        public string AlamatRumah { get; set; }
+        public int Points { get; set; }
+        public string ImageUrl { get; set; }
+    }
+
+    private bool showModal = false;
+    private string? selectedImageUrl;
+
+    private void ShowImage(string imageUrl)
+    {
+        selectedImageUrl = imageUrl;
+        showModal = true;
+    }
+
+    private void CloseModal()
+    {
+        showModal = false;
+        selectedImageUrl = null;
+    }
+}
+
+<div class="container mt-3">
+    <div class="badge bg-light text-dark mb-2">
+        <h1 class="page-title">Detail RDP</h1>
+    </div>
+
+    <!-- Header container with vertical alignment -->
+    <div class="d-flex justify-content-between align-items-center">
+        <!-- Date on the left -->
+        <div class="col-md-6">
+            <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                <span>
+                    <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                </span>
+                @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <!-- Left Section: Gambar utama dan galeri -->
+        <div class="left-section">
+            <!-- Gambar Utama -->
+            <div class="main-image">
+                <img src="@rdpData.ImageUrl" alt="Gambar Rumah" class="rdp-image" />
+            </div>
+
+            <!-- Galeri Gambar -->
+            <div class="image-gallery">
+                @foreach (var item in allData)
+                {
+                    <img src="@item.ImageUrl" alt="Gallery Image" class="gallery-item" @onclick="() => ShowImage(item.ImageUrl)">
+                }
+            </div>
+        </div>
+
+        <!-- Right Section: Detail -->
+        <div class="detail-section">
+            <table>
+                <tr>
+                    <td><strong>Kondisi RDP</strong></td>
+                    <td>: <span class="status-card">Layak</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Status RDP</strong></td>
+                    <td>: Dihuni</td>
+                </tr>
+                <tr>
+                    <td><strong>Keterangan 1</strong></td>
+                    <td>: Pekerja RU IV</td>
+                </tr>
+                <tr>
+                    <td><strong>Keterangan 2</strong></td>
+                    <td>: Dihuni bersama Alvin Samudra (2241389)</td>
+                </tr>
+                <tr>
+                    <td><strong>Nomor RDP</strong></td>
+                    <td>: GS-04</td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Penghuni</strong></td>
+                    <td>: Magis</td>
+                </tr>
+                <tr>
+                    <td><strong>Nopek</strong></td>
+                    <td>: 2048</td>
+                </tr>
+                <tr>
+                    <td><strong>Jenis Hunian</strong></td>
+                    <td>: Cluster</td>
+                </tr>
+                <tr>
+                    <td><strong>Terakhir Renovasi</strong></td>
+                    <td>: 1 Januari 2024</td>
+                </tr>
+                <tr>
+                    <td><strong>Kelurahan</strong></td>
+                    <td>: Gunung Simping</td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Lurah</strong></td>
+                    <td>: Sitam</td>
+                </tr>
+                <tr>
+                    <td><strong>RT</strong></td>
+                    <td>: 001</td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Ketua RT</strong></td>
+                    <td>: Reza</td>
+                </tr>
+                <tr>
+                    <td><strong>RW</strong></td>
+                    <td>: 002</td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Ketua RW</strong></td>
+                    <td>: Tegar</td>
+                </tr>
+                <tr>
+                    <td><strong>Alamat</strong></td>
+                    <td>: Komperta Gunung Simping, Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah, 23224</td>
+                </tr>
+                <tr>
+                    <td><strong>Fasilitas</strong></td>
+                    <td>: Mesin Cuci, AC, Kasur</td>
+                </tr>
+            </table>
+        </div> <!-- Right Section End -->
+    </div> <!-- Main Section End -->
+    <!-- Image Modal -->
+    @if (showModal)
+    {
+        <div class="modal" @onclick="CloseModal">
+            <div class="modal-content" @onclick:stopPropagation>
+                <span class="close" @onclick="CloseModal">&times;</span>
+                <img src="@selectedImageUrl" alt="Larger Image" class="modal-image" />
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .rdp-detail-container {
+        padding: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+    .date-info {
+        font-size: 14px;
+        color: #888;
+        display: flex;
+        align-items: center;
+    }
+
+        .date-info i {
+            margin-right: 5px;
+        }
+
+    /* Main Section */
+    .main-section {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .left-section {
+        width: 50%;
+    }
+
+    .main-image {
+        position: relative;
+        width: 100%;
+        max-height: 450px;
+        overflow: hidden;
+    }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+    /* Galeri Gambar */
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Detail Section */
+    .detail-section {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 45%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .detail-section table {
+            font-size: 14px;
+            width: 100%;
+        }
+
+            .detail-section table td {
+                padding: 5px;
+            }
+
+    /* Auction Button */
+    .action-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn-success {
+        background-color: #4CAF50;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+        .btn-success:hover {
+            background-color: #45a049;
+        }
+
+    /* Modal Styles */
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+    }
+
+    .modal-image {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    /* Status Card */
+    .status-card {
+        display: inline-block;
+        background-color: #8BC34A; /* Warna hijau */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+</style>

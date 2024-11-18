@@ -1,0 +1,211 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TesBlazor1
+build_property.RootNamespace = TesBlazor1
+build_property.ProjectDir = D:\SEMESTER 5 PERTAMINA\PROJECT\MAGIS\TesBlazor1\TesBlazor1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\SEMESTER 5 PERTAMINA\PROJECT\MAGIS\TesBlazor1\TesBlazor1
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Account/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY2Vzc0RlbmllZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Account/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Account/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ291dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Data Fasilitas/DataFasilitas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXRhIEZhc2lsaXRhc1xEYXRhRmFzaWxpdGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/DialogNotif.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEaWFsb2dOb3RpZi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogNotSet.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nTm90U2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogSet.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nU2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/TambahPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcVGFtYmFoUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DetailRDPLayak.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEZXRhaWxSRFBMYXlhay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DialogDurasi.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEaWFsb2dEdXJhc2kucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DialogTambahFasilitas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEaWFsb2dUYW1iYWhGYXNpbGl0YXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/KunciRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxLdW5jaVJEUC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/PerbaruiRDP1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxQZXJiYXJ1aVJEUDEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/PerbaruiRDP2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxQZXJiYXJ1aVJEUDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/RDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxSRFAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/RDPTersedia.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxSRFBUZXJzZWRpYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Laporan RDP/LaporanRDPhc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMYXBvcmFuIFJEUFxMYXBvcmFuUkRQaGMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/Detailrdp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcRGV0YWlscmRwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/LanjutanNonLelangPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcTGFuanV0YW5Ob25MZWxhbmdQZWdhd2FpLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/Lelang.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcTGVsYW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/NonLelangNopek.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcTm9uTGVsYW5nTm9wZWsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/NonLelangPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcTm9uTGVsYW5nUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/PemenangLelang.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcUGVtZW5hbmdMZWxhbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Laporan RDP/DialogTambahLaporan.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXExhcG9yYW4gUkRQXERpYWxvZ1RhbWJhaExhcG9yYW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Pelelangan RDP/DetailRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXFBlbGVsYW5nYW4gUkRQXERldGFpbFJEUC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Pelelangan RDP/DialogInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXFBlbGVsYW5nYW4gUkRQXERpYWxvZ0luZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Pelelangan RDP/LelangRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXFBlbGVsYW5nYW4gUkRQXExlbGFuZ1JEUC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Pelelangan RDP/RiwayatBID.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXFBlbGVsYW5nYW4gUkRQXFJpd2F5YXRCSUQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Pengembalian Kunci RDP/Pengembalian Kunci RDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXFBlbmdlbWJhbGlhbiBLdW5jaSBSRFBcUGVuZ2VtYmFsaWFuIEt1bmNpIFJEUC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-193xonvjrp
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wqbxipuvb9
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DataPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGF0YVBlZ2F3YWkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-f2lvs43j5a
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DataRDPhc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEYXRhUkRQaGMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jf02fixk1p
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DialogTambahRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEaWFsb2dUYW1iYWhSRFAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rcnh5str0t
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Kunci/PenyerahanKunciRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xLdW5jaVxQZW55ZXJhaGFuS3VuY2lSRFAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uzcwv31u6d
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Laporan Pemilik RDP/DialogPemilik.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMYXBvcmFuIFBlbWlsaWsgUkRQXERpYWxvZ1BlbWlsaWsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-iu28ogipfv
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/HC/Laporan Pemilik RDP/LaporanPemilikRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMYXBvcmFuIFBlbWlsaWsgUkRQXExhcG9yYW5QZW1pbGlrUkRQLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-bk9evmpi9b
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-85tf6mp8j4
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Laporan RDP/DialogPemilik-Pegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXExhcG9yYW4gUkRQXERpYWxvZ1BlbWlsaWstUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zonaf8ihfa
+
+[D:/SEMESTER 5 PERTAMINA/PROJECT/MAGIS/TesBlazor1/TesBlazor1/Components/Pages/Pegawai/Laporan RDP/LaporanPemilikRDP.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZWdhd2FpXExhcG9yYW4gUkRQXExhcG9yYW5QZW1pbGlrUkRQLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-rg0sfycfsr

@@ -1,0 +1,240 @@
+﻿@page "/lelang-rdp"
+@attribute [StreamRendering]
+
+<PageTitle>Pelelangan RDP</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Pelelangan RDP Saat Ini</h1>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Date on the left -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+            <!-- Button Penyerahan Kunci RDP -->
+            <div class="d-flex align-items-center gap-2 mt-4">
+                <a href="/PenyerahanKunci" class="ms-auto text-decoration-none">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-danger">Penyerahan Kunci</button>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="row mb-4" style="margin-top: 15px">
+                <div class="col-12">
+                    <div class="card-lelang mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Apartement A210</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        30/09/2024 – 15/10/2024
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- New Row for "Klasemen Terkini" -->
+                        <div class="card-lelang" style="background-color: white; border-radius: 0;">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: black; font-size: 16px">Klasemen Terkini:</p>
+                                </div>
+                                <div class="col text-right">
+                                    <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #9A9A9A; font-size: 16px;">
+                                        5 pekerja mengikuti lelang
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <table class="table table-striped text-center m-0" style="width: 100%; margin: 0; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden;">
+                            <thead style="background-color: black; color: white;">
+                                <tr style="font-weight: normal; font-size: 14px">
+                                    <th>No</th>
+                                    <th>Nopek</th>
+                                    <th>Nama</th>
+                                    <th>Poin</th>
+                                    <th>Pilihan Ke-</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var lelang in rdpData)
+                                {
+                                    <tr style="background-color: @lelang.RowColor; font-size: 14px; ">
+                                        <td>@lelang.No</td>
+                                        <td>@lelang.Nopek</td>
+                                        <td>@lelang.Nama</td>
+                                        <td>@lelang.Poin</td>
+                                        <td>@lelang.Pilihan</td>                         
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Donan No.80</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                       30/09/2024 – 15/10/2024
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Sidanegara No.566</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        30/09/2024 – 15/10/2024
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Sidanegara No.567</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        30/09/2024 – 15/10/2024
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        @code {
+        private List<LelangRDP> rdpData = new List<LelangRDP>
+        {
+        new LelangRDP { No = 1, Nopek = "2080", Nama = "Dayinta Palupi", Poin = "5408.90", Pilihan = "3", RowColor = "#EDFFC3"},
+        new LelangRDP { No = 2, Nopek = "2056", Nama = "Dinda Rachmawati Suro", Poin = "5246,60", Pilihan = "1", RowColor = "#E5F4C1"},
+        new LelangRDP { No = 3, Nopek = "2070", Nama = "Ramadhan Surya Davidson", Poin = "4868,50", Pilihan = "1",RowColor = "#EDFFC3"},
+        new LelangRDP { No = 4, Nopek = "2021", Nama = "Samudra Carpenter", Poin = "4550,8", Pilihan = "1", RowColor = "#E5F4C1"},
+        new LelangRDP { No = 5, Nopek = "2071", Nama = "Billie Anwar", Poin = "4000", Pilihan = "1",RowColor = "#EDFFC3"},
+        };
+
+        private void OpenPdfModal(LelangRDP rdp)
+        {
+            // Logic to open PDF modal
+        }
+
+        public class LelangRDP
+        {
+            public int No { get; set; }
+            public string Nopek { get; set; }
+            public string Nama { get; set; }
+            public string Poin { get; set; }
+            public string Pilihan { get; set; }
+            public string RowColor { get; set; }
+        }
+        }
+
+        <style>
+            .card-lelang {
+                margin-bottom: 15px;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-lelang {
+                background-color: #358DC7;
+                border-radius: 15px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+
+
+            .action-buttons button, .action-buttons select {
+                min-width: 150px;
+            }
+
+            .accordion-button {
+                font-weight: bold;
+                color: #fff;
+            }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+            .accordion-header .d-flex {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .not-set {
+                color: #ffc107;
+            }
+
+            .btn {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .custom-btn {
+                background-color: white !important;
+                color: black !important; /* Agar teks atau ikon terlihat */
+                border: 1px solid #ddd; /* Opsi untuk menambahkan border */
+            }
+        </style>
+
+    </Authorized>
+</AuthorizeView>

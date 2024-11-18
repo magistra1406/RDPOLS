@@ -1,0 +1,121 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <AuthorizeView>
+        <NotAuthorized>
+        </NotAuthorized>
+        <Authorized>
+            <div style="background-image:none;background-color:white;" class="sidebar">
+                <NavMenu />
+            </div>
+        </Authorized>
+    </AuthorizeView>
+
+    <main>
+        <div class="top-row px-4" style="background-color:white">
+            <AuthorizeView>
+                <NotAuthorized>
+                    <a href="/login">Login</a>
+                </NotAuthorized>
+                <Authorized>
+                    @if (context.User.IsInRole("Pegawai"))
+                    {
+                        <!-- Box untuk Points dengan ikon bintang -->
+                        <div class="points-box">
+                            Points: <b>@context.User.FindFirst("Points")?.Value</b>
+                        </div>
+                        
+                        <!-- Profil Pengguna -->
+                        <a href="/profile" class="profile-picture">
+                            <img src="@(context.User.FindFirst("ImageUrl")?.Value ?? "/images/profile.png")" />
+                        </a>
+
+                    }
+                    else if (context.User.IsInRole("SuperAdmin") || context.User.IsInRole("HC") || context.User.IsInRole("AM"))
+                    {
+                        <!-- Box untuk Points dengan ikon bintang -->
+                        <div class="points-box">
+                            Points: <b>@context.User.FindFirst("Points")?.Value</b>
+                        </div>
+
+                        <!-- Profil Pengguna -->
+                        <a href="/profile" class="profile-picture"></a>
+                    }
+                </Authorized>
+            </AuthorizeView>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+<style>
+    .bi-bell {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='%23FFFFFF'%20class='bi%20bi-bell'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill='%23FFFFFF'%20d='M8%2016a2%202%200%200%200%201.985-1.75h-3.97A2%202%200%200%200%208%2016zm.865-14.91a1.5%201.5%200%201%200-1.73%200A5.001%205.001%200%200%200%203%206c0%203.268-.926%205.193-1.623%206.016A1.513%201.513%200%200%200%202%2013.5h12a1.513%201.513%200%200%200%201.623-1.484C13.926%2011.193%2013%209.268%2013%206a5.001%205.001%200%200%200-4.135-4.91zM14%2013H2a.5.5%200%200%201-.4-.8c.858-1.143%201.4-3.019%201.4-6.2a4%204%200%201%201%208%200c0%203.181.542%205.057%201.4%206.2a.5.5%200%200%201-.4.8z'/%3E%3C/svg%3E");
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+    }
+
+
+
+
+    .points-box, .notification-box {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 0 8px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+        vertical-align: middle;
+    }
+
+    .profile-picture {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 16px;
+    }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+
+
+    #blazor-error-ui {
+        display: none;
+        background: #f8d7da;
+        color: #721c24;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 0.875rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+        #blazor-error-ui .reload, #blazor-error-ui .dismiss {
+            margin-left: 1rem;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+</style>

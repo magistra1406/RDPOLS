@@ -1,0 +1,46 @@
+﻿@page "/tambahpegawai"
+@inject NavigationManager Navigation
+
+<PageTitle>Tambah Pegawai</PageTitle>
+
+<h3>Tambah Pegawai</h3>
+
+<form>
+    <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="tmt">TMT:</label>
+        <input type="text" id="tmt" class="form-control">
+    </div>
+    <div class="form-group mb-3">
+        <label for="nopek">Nopek:</label>
+        <input type="text" id="nopek" class="form-control" placeholder="Masukkan nopek" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="costCenter">Cost Center:</label>
+        <input type="text" id="costCenter" class="form-control" placeholder="Masukkan cost center" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="prl">PRL:</label>
+        <input type="text" id="prl" class="form-control" placeholder="Masukkan PRL" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="statusKeluarga">Status Keluarga:</label>
+        <input type="text" id="statusKeluarga" class="form-control" placeholder="Masukkan status keluarga" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="smk">Input SMK (Kontribusi):</label>
+        <input type="text" id="smk" class="form-control" placeholder="Masukkan kontribusi" />
+    </div>
+    <button type="button" class="btn btn-primary" @onclick="SavePegawai">Simpan</button>
+</form>
+
+@code {
+    private void SavePegawai()
+    {
+        // Logic untuk menyimpan data pegawai
+        Navigation.NavigateTo("/datapegawai");
+    }
+}

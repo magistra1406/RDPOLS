@@ -1,0 +1,81 @@
+﻿@page "/login"
+
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using TesBlazor1.Models.ViewModels
+@using TesBlazor1.Models.Entities
+@inject NavigationManager navigationManager
+
+<PageTitle>Pertamina</PageTitle>
+
+
+<div class="row">
+    <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border" style="background-color:white">
+        <EditForm Model="@Model" OnValidSubmit="Authenticate" FormName="LoginForm">
+            <DataAnnotationsValidator />
+            <div class="mb-3 text-center flex-column">
+                <img src="/images/pertamina.png" style="max-height:4rem; margin-bottom:3rem; margin-top: 3rem" />
+                <h3 style="margin-bottom:3rem;">Login</h3>
+            </div>
+            <div class="mb-3">
+                <label>Nopek</label>
+                <InputText @bind-Value="Model.Username" class="form-control" placeholder="Nopek" />
+                <ValidationMessage For="() => Model.Username" />
+            </div>
+            <div class="mb-3">
+                <label>Kata Sandi</label>
+                <InputText @bind-Value="Model.Password" class="form-control" placeholder="Kata Sandi" type="Kata Sandi" />
+            </div>
+            <div class="mb-3 text-center">
+                <span class="text-danger">@errorMessage</span>
+            </div>
+            <div class="mb-3 d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext? HttpContext { get; set; }
+
+    [SupplyParameterFromForm]
+    public LoginViewModel Model { get; set; } = new();
+
+    private string? errorMessage;
+
+    private async Task Authenticate()
+    {
+        // used to take dummy data account that has been made in UserAccount.cs 
+        var users = UserAccount.GetDummyUsers();
+
+        var user = users.FirstOrDefault(u => u.Username == Model.Username && u.Password == Model.Password);
+
+        if (user == null)
+        {
+            errorMessage = "Invalid username or password";
+            return;
+        }
+
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, user.Name),
+            new Claim(ClaimTypes.Role, user.Role),
+            new Claim("Nopek", user.Nopek ?? string.Empty),
+            new Claim("Role", user.Role ?? string.Empty),
+            new Claim("PRL", user.PRL ?? string.Empty),
+            new Claim("Section", user.Section ?? string.Empty),
+            new Claim("Position", user.Position ?? string.Empty),
+            new Claim("Points", user.Points?.ToString() ?? "0"),
+            new Claim("CanAccessAllWeatherData", user.Points > 200 ? "true" : "false")
+           
+        };
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var principal = new ClaimsPrincipal(identity);
+        await HttpContext.SignInAsync(principal);
+        navigationManager.NavigateTo("/");
+    }
+}

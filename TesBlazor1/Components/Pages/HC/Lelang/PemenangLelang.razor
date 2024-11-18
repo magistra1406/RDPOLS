@@ -1,0 +1,287 @@
+﻿@page "/PemenangLelang"
+@attribute [StreamRendering]
+
+<PageTitle>Penyerahan Kunci</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Penyerahan Kunci</h1>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Date on the left -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+            <div class="row mb-4" style="margin-top: 15px">
+                <div class="col-12">
+                    <div class="card-lelang mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Apartement A210</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    (Melalui Pelelangan)
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        2056 - Dinda Rachma
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-lelang" style="background-color: white; border-radius: 0;">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: black; font-size: 16px">Pemenang:</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped text-center m-0" style="width: 100%; margin: 0; overflow: hidden;">
+                            <thead style="background-color: black; color: white;">
+                            <th>No</th>
+                            <th>Nopek</th>
+                            <th>Nama</th>
+                            <th>Poin</th>
+                            <th>Due Date</th>
+                            <th>Tanggal Pesan</th>
+                            <th>Pilihan Ke-</th>
+                            <th>Aksi</th>
+                            </thead>
+                            <tbody>
+                                @foreach (var lelang in rdpData)
+                                {
+                                    <tr style="background-color: @lelang.RowColor; font-size: 14px; ">
+                                        <td>@lelang.No</td>
+                                        <td>@lelang.Nopek</td>
+                                        <td>@lelang.Nama</td>
+                                        <td>@lelang.Poin</td>
+                                        <td>@lelang.DueDate</td>
+                                        <td>@lelang.TanggalPesan</td>
+                                        <td>@lelang.Pilihan</td>
+                                        <td><input type="checkbox" checked></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <div class="card-lelang" style="background-color: white; border-radius: 0 0 15px 15px; display: flex; justify-content: flex-end; align-items: center; padding: 5px;">
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col">
+                                    <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: black; font-size: 12px; font-style: italic; font-weight: bold;">
+                                        Generate Document:
+                                    </p>
+                                </div>
+
+                                <div class="col" style="display: flex; gap: 15px; align-items: center;">
+                                    <div style="display: flex; align-items: center;">
+                                        <NavLink class="btn btn-light" style="padding: 0; margin-right: 5px;">
+                                            <span class="bi-filetype-pdf" aria-hidden="true" style="font-size: 24px; color: red;"></span>
+                                        </NavLink>
+                                        <span style="font-size: 12px; color: black; font-style: italic; white-space: nowrap;">PRDP Setempat</span>
+                                    </div>
+
+                                    <div style="display: flex; align-items: center;">
+                                        <NavLink class="btn btn-light" style="padding: 0; margin-right: 5px;">
+                                            <span class="bi-filetype-pdf" aria-hidden="true" style="font-size: 24px; color: red;"></span>
+                                        </NavLink>
+                                        <span style="font-size: 12px; color: black; font-style: italic; white-space: nowrap;">PRDP Pusat</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center;">
+                                        <NavLink class="btn btn-light" style="padding: 0; margin-right: 5px;">
+                                            <span class="bi-filetype-pdf" aria-hidden="true" style="font-size: 24px; color: red;"></span>
+                                        </NavLink>
+                                        <span style="font-size: 12px; color: black; font-style: italic; white-space: nowrap;">Pernyataan Penghematan</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center;">
+                                        <NavLink class="btn btn-light" style="padding: 0; margin-right: 5px;">
+                                            <span class="bi-filetype-pdf" aria-hidden="true" style="font-size: 24px; color: red;"></span>
+                                        </NavLink>
+                                        <span style="font-size: 12px; color: black; font-style: italic; white-space: nowrap;">Pernyataan Pekerja</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Donan No.80</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Melalui Pelelangan
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        Not Set
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Sidanegara No.566</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Melalui Pelelangan
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        Not Set
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-lelang" style="margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Sidanegara No.567</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Melalui Pelelangan
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        Not Set
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        @code {
+        private List<LelangRDP> rdpData = new List<LelangRDP>
+        {       
+        new LelangRDP { No = 2, Nopek = "2056", Nama = "Dinda Rachma", Poin = "5246,60", DueDate = "10/10/2007", TanggalPesan = "14/03/2023", Pilihan = "1", RowColor = "#EDFFC3"},
+        };
+
+        private void OpenPdfModal(LelangRDP rdp)
+        {
+            // Logic to open PDF modal
+        }
+
+        public class LelangRDP
+        {
+            public int No { get; set; }
+            public string Nopek { get; set; }
+            public string Nama { get; set; }
+            public string Poin { get; set; }
+            public string DueDate { get; set; }
+            public string TanggalPesan { get; set; }
+            public string Pilihan { get; set; }
+            public string RowColor { get; set; }
+        }
+        }
+
+        <style>
+            .card-lelang {
+                margin-bottom: 15px;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-lelang {
+                background-color: #358DC7;
+                border-radius: 15px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+
+            .action-buttons button, .action-buttons select {
+                min-width: 150px;
+            }
+
+            .accordion-button {
+                font-weight: bold;
+                color: #fff;
+            }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+            .accordion-header .d-flex {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .periode-lelang {
+                font-size: 14px;
+                color: #f8f9fa;
+                font-weight: bold;
+            }
+
+            .not-set {
+                color: #ffc107;
+            }
+
+
+            .btn {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .btn-success {
+                padding: 10px 20px;
+                font-weight: bold;
+                background-color: #585858;
+                border-color: #C9C9C9;
+                color: #ffff;
+            }
+
+            .bi-filetype-pdf {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='%23FF0000'%20class='bi%20bi-filetype-pdf'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M14%204.5V14a2%202%200%200%201-2%202h-1v-1h1a1%201%200%200%200%201-1V4.5h-2A1.5%201.5%200%200%201%209.5%203V1H4a1%201%200%200%200-1%201v9H2V2a2%202%200%200%201%202-2h5.5zM1.6%2011.85H0v3.999h.791v-1.342h.803q.43%200%20.732-.173.305-.175.463-.474a1.4%201.4%200%200%200%20.161-.677q0-.375-.158-.677a1.2%201.2%200%200%200-.46-.477q-.3-.18-.732-.179m.545%201.333a.8.8%200%200%201-.085.38.57.57%200%200%201-.238.241.8.8%200%200%201-.375.082H.788V12.48h.66q.327%200%20.512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602%200%20.998-.237a1.45%201.45%200%200%200%20.595-.689q.196-.45.196-1.084%200-.63-.196-1.075a1.43%201.43%200%200%200-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371%200%20.609.152a.9.9%200%200%201%20.354.454q.118.302.118.753a2.3%202.3%200%200%201-.068.592%201.1%201.1%200%200%201-.196.422.8.8%200%200%201-.334.252%201.3%201.3%200%200%201-.483.082h-.563zm3.743%201.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z'/%3E%3C/svg%3E");
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+                color: red; /* Set the icon color to red */
+            }
+
+            .custom-btn {
+                background-color: white !important;
+                color: black !important; /* Agar teks atau ikon terlihat */
+                border: 1px solid #ddd; /* Opsi untuk menambahkan border */
+            }
+        </style>
+
+    </Authorized>
+</AuthorizeView>

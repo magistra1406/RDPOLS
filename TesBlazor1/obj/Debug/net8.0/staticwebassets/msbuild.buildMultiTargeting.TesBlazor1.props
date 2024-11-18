@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TesBlazor1.props" />
+</Project>

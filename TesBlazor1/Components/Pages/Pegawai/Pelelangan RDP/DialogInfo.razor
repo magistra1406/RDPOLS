@@ -1,0 +1,49 @@
+﻿<div>
+    <button onclick="document.getElementById('rdp-dialog').showModal()" class="btn btn-danger">
+        <span aria-hidden="true"></span> Informasi Lelang
+    </button>
+
+    <dialog id="rdp-dialog" style="width: 500px; border-radius: 10px; padding: 20px; border: 2px solid #D4D4D4;">
+        <form method="dialog">
+            <h2 class="modal-title text-center mb-3"><b>Info dan Lokasi Rumah</b></h2>
+
+            <div class="mb-4">
+                <p><b>Info dalam pemilihan:</b></p>
+                <ul>
+                    <li>Sebelum mengambil keputusan mohon untuk cek keadaan rumah yang akan dipilih;</li>
+                    <li>Maksimal 3 (tiga) rumah yang dapat dipilih;</li>
+                    <li>Pemilihan berdasarkan urutan prioritas rumah yang diinginkan;</li>
+                    <li>Pekerja yang ditetapkan sebagai pemenang tidak boleh membatalkan keputusan, jika melanggar hal tersebut akan mendapatkan sanksi selama 2 (dua) tahun untuk tidak mengikuti pelelangan RDP.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <p><b>Contact Person:</b></p>
+                <p>xxxx: John Wick<br>xxxx: Baila Fauri</p>
+            </div>
+
+            <div class="text-center">
+                <button type="button" class="btn btn-danger" onclick="document.getElementById('rdp-dialog').close()">Tutup</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+<style>
+    .bi-houses {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='white'%20class='bi%20bi-houses'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M5.793%201a1%201%200%200%201%201.414%200l.647.646a.5.5%200%201%201-.708.708L6.5%201.707%202%206.207V12.5a.5.5%200%200%200%20.5.5.5.5%200%200%201%200%201A1.5%201.5%200%200%201%201%2012.5V7.207l-.146.147a.5.5%200%200%201-.708-.708zm3%201a1%201%200%200%201%201.414%200L12%203.793V2.5a.5.5%200%200%201%20.5-.5h1a.5.5%200%200%201%20.5.5v3.293l1.854%201.853a.5.5%200%200%201-.708.708L15%208.207V13.5a1.5%201.5%200%200%201-1.5%201.5h-8A1.5%201.5%200%200%201%204%2013.5V8.207l-.146.147a.5.5%201%201%201-.708-.708zm.707.707L5%207.207V13.5a.5.5%200%200%200%20.5.5h8a.5.5%200%200%200%20.5-.5V7.207z'/%3E%3C/svg%3E");
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    /* Tombol Tutup berwarna merah dengan border putih */
+    .btn-danger {
+        background-color: #D9534F;
+        border-color: #FFFFFF;
+    }
+</style>

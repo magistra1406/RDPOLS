@@ -1,0 +1,242 @@
+﻿@page "/lanjutan_nonlelang"
+@inject NavigationManager Navigation
+
+<PageTitle>Non Lelang</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Non Lelang</h1>
+            </div>
+
+            <!-- Date and Add RDP Button -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <!-- Date -->
+                    <span class="badge bg-light text-dark mt-2">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+            <!-- Search bar and Buttons -->
+            <div class="row mb-3 align-items-center">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Masukkan Nopek" @bind="SearchTerm" />
+                </div>
+                <div class="col-md-2">
+                    <!-- Tombol Synchronize di posisi kanan -->
+                    <button class="btn btn-primary" @onclick="SearchNopek">Cari</button>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card p-3 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <img src="@(rdpData?.ImageUrl ?? "/images/profile.png")" alt="Profile Picture" class="img-fluid profile-img" />
+                            </div>
+                            <div class="col-md-10">
+                                <div class="d-flex">
+                                    <div class="col-4"><strong>Nama Lengkap</strong></div>
+                                    <div class="col-8"><span class="text-muted">: Moh. Magistra Jahfal</span></div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <div class="col-4"><strong>Nopek</strong></div>
+                                    <div class="col-8"><span class="text-muted">: 2048</span></div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <div class="col-4"><strong>Posisi dalam Role Level (PRL)</strong></div>
+                                    <div class="col-8"><span class="text-muted">: 20</span></div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <div class="col-4"><strong>Poin</strong></div>
+                                    <div class="col-8"><span class="text-muted">: 95.100</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-4">
+                <div class="card p-3 shadow-sm">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" style="text-align: left; display: block;"><b>Status RDP</b></label>
+                            <div class="d-flex flex-wrap">
+                                <div class="form-check me-3">
+                                    <input type="radio" id="alihfugnsi" name="statusRDP" value="alihfungsi" class="form-check-input">
+                                    <label for="alihfungsi" class="form-check-label">Alih Fungsi</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="dihuni" name="statusRDP" value="dihuni" class="form-check-input">
+                                    <label for="dihuni" class="form-check-label">Dihuni</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="kosong" name="statusRDP" value="kosong" class="form-check-input">
+                                    <label for="kosong" class="form-check-label">Kosong</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="peminjaman" name="statusRDP" value="peminjaman" class="form-check-input">
+                                    <label for="peminjaman" class="form-check-label">Peminjaman</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="tersedia" name="statusRDP" value="tersedia" class="form-check-input">
+                                    <label for="tersedia" class="form-check-label">Tersedia</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="keterangan" class="form-label" style="text-align: left; display: block;"><b>Keterangan 1</b></label>
+                            <select id="keterangan" name="keterangan" class="form-select">
+                                <option value="">Pilih Keterangan</option>
+                                <option value="1">Kantor PT PAR</option>
+                                <option value="2">Kantor RDMP</option>
+                                <option value="3">Kantor Gudang Angkutan</option>
+                                <option value="4">Kantor Pool Angkutan</option>
+                                <option value="5">Gudang PT Patra Jasa</option>
+                                <option value="6">Pekerja RU IV</option>
+                                <option value="7">Pekerja RDMP RU IV</option>
+                                <option value="8">Guest House</option>
+                                <option value="9">Kosong</option>
+                                <option value="10">Progress Perbaikan</option>
+                                <option value="11">Tidak Layak</option>
+                                <option value="12">Guest House - Tamu Internal</option>
+                                <option value="13">Guest House - Tamu Eksternal</option>
+                                <option value="14">Mutasi Keluar</option>
+                                <option value="15">Optimalisasi Asset</option>
+                                <option value="16">Pekerja Meninggal</option>
+                                <option value="17">Pekerja Pensiun</option>
+                                <option value="18">Pemenang Bursa</option>
+                                <option value="19">Transit Mutasi Masuk</option>
+                                <option value="20">Transit RDP Rusak</option>
+                                <option value="21">Transit Case Medis</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="keterangan" class="form-label" style="text-align: left; display: block;"><b>Keterangan 2</b></label>
+                            <input type="text" id="keterangan" name="keterangan" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        @code {
+        private string SearchTerm { get; set; } = string.Empty;
+        private LelangData? rdpData;
+        private bool showModal = false;
+        private string? selectedImageUrl;
+
+        private LelangData[] allData = new[]
+        {
+        new LelangData { No = 1, AlamatRumah = "Gunung Simping 301", Points = 150, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 2, AlamatRumah = "Gunung Simping 302", Points = 250, ImageUrl = "/images/house2.png" },
+        new LelangData { No = 3, AlamatRumah = "Apartemen 101", Points = 100, ImageUrl = "/images/house3.png" }
+        };
+
+        protected override void OnParametersSet()
+        {
+            if (rdpData == null)
+            {
+                rdpData = new LelangData
+                {
+                    No = 0,
+                    AlamatRumah = "Data tidak ditemukan",
+                    Points = 0,
+                    ImageUrl = "/images/profile.png"  // This assumes the image is located in the wwwroot/images directory
+                };
+            }
+        }
+
+        private void ShowImage(string imageUrl)
+        {
+            selectedImageUrl = imageUrl;
+            showModal = true;
+        }
+
+        private void CloseModal()
+        {
+            showModal = false;
+            selectedImageUrl = null;
+        }
+
+        private void SearchNopek()
+        {
+            Navigation.NavigateTo($"/nonlelangpegawai/{SearchTerm}");
+        }
+
+        public class LelangData
+        {
+            public int No { get; set; }
+            public string AlamatRumah { get; set; }
+            public int Points { get; set; }
+            public string ImageUrl { get; set; }
+        }
+        }
+        <style>
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin-right: 16px;
+            }
+
+            .d-flex .col-4 {
+                font-weight: bold;
+            }
+
+            .d-flex .col-8 {
+                text-align: left;
+            }
+
+            /* Memberikan jarak vertikal antar elemen */
+            .mt-2 {
+                margin-top: 0.5rem;
+            }
+
+            .square-profile-pic {
+                width: 100px;
+                height: 100px;
+                object-fit: cover; /* Agar gambar tetap proporsional */
+            }
+
+            .bi-eye {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-eye'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M16%208s-3-5.5-8-5.5S0%208%200%208s3%205.5%208%205.5S16%208%2016%208M1.173%208a13%2013%200%200%201%201.66-2.043C4.12%204.668%205.88%203.5%208%203.5s3.879%201.168%205.168%202.457A13%2013%200%200%201%2014.828%208q-.086.13-.195.288c-.335.48-.83%201.12-1.465%201.755C11.879%2011.332%2010.119%2012.5%208%2012.5s-3.879-1.168-5.168-2.457A13%2013%200%200%201%201.172%208z'/%3E%3Cpath%20d='M8%205.5a2.5%202.5%200%201%200%200%205%202.5%202.5%200%200%200%200-5M4.5%208a3.5%203.5%200%201%201%207%200%203.5%203.5%200%200%201-7%200'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-filetype-pdf {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-filetype-pdf'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M14%204.5V14a2%202%200%200%201-2%202h-1v-1h1a1%201%200%200%200%201-1V4.5h-2A1.5%201.5%200%200%201%209.5%203V1H4a1%201%200%200%200-1%201v9H2V2a2%202%200%200%201%202-2h5.5zM1.6%2011.85H0v3.999h.791v-1.342h.803q.43%200%20.732-.173.305-.175.463-.474a1.4%201.4%200%200%200%20.161-.677q0-.375-.158-.677a1.2%201.2%200%200%200-.46-.477q-.3-.18-.732-.179m.545%201.333a.8.8%200%200%201-.085.38.57.57%200%200%201-.238.241.8.8%200%200%201-.375.082H.788V12.48h.66q.327%200%20.512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602%200%20.998-.237a1.45%201.45%200%200%200%20.595-.689q.196-.45.196-1.084%200-.63-.196-1.075a1.43%201.43%200%200%200-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371%200%20.609.152a.9.9%200%200%201%20.354.454q.118.302.118.753a2.3%202.3%200%200%201-.068.592%201.1%201.1%200%200%201-.196.422.8.8%200%200%201-.334.252%201.3%201.3%200%200%201-.483.082h-.563zm3.743%201.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z'/%3E%3C/svg%3E");
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .card {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background-color: #fff;
+            }
+
+        </style>
+    </Authorized>
+</AuthorizeView>

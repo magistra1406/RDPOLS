@@ -1,0 +1,152 @@
+﻿@page "/datapegawai"
+@inject IJSRuntime js
+
+<PageTitle>Data Pegawai</PageTitle>
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <!-- Title -->
+            <h1>Data Pegawai</h1>
+        </div>
+    </div>
+
+    <!-- Date and Add RDP Button -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <!-- Date -->
+            <span class="badge bg-light text-dark mt-2">
+                <span>
+                    <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                </span>
+                @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+            </span>
+        </div>
+    </div>
+
+    <!-- Search bar and Buttons -->
+    <div class="row mb-3 align-items-center">
+        <div class="col-md-6">
+            <!-- Input Pencarian di posisi kiri -->
+            <input class="form-control" type="text" placeholder="Cari Pegawai..." @bind="SearchTerm" />
+        </div>
+        <div class="col-md-6">
+            <!-- Tambah Data dan Synchronize di posisi kanan dalam satu baris -->
+            <div class="d-flex justify-content-between">
+                <DialogPegawai></DialogPegawai>
+                <button class="btn btn-outline-primary" @onclick="SynchronizeFromSAP">Synchronize from SAP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee Table -->
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped text-center small">
+                <thead class="table-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Aksi</th>
+                        <th>Nopek</th>
+                        <th>Nama Pegawai</th>
+                        <th>Jabatan</th>
+                        <th>Kontribusi</th>
+                        <th>PRL</th>
+                        <th>TMT PRL</th>
+                        <th>TMT Dinas</th>
+                        <th>Status Keluarga</th>
+                        <th>Status Penilaian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pegawai in FilteredPegawaiList())
+                    {
+                        <tr class="@GetRowClass(pegawai.StatusPenilaian)">
+                            <td>@pegawai.No</td>
+                            <td>
+                                <DialogEdit></DialogEdit>
+                            </td>
+                            <td>@pegawai.Nopek</td>
+                            <td>@pegawai.NamaPegawai</td>
+                            <td>@pegawai.Jabatan</td>
+                            <td>@pegawai.Kontribusi</td>
+                            <td>@pegawai.PRL</td>
+                            <td>@pegawai.TMTPRL</td>
+                            <td>@pegawai.TMTDinas</td>
+                            <td>@pegawai.StatusKeluarga</td>
+                            <td>
+                                @if (pegawai.StatusPenilaian == "Set")
+                                {
+                                    <DialogSet></DialogSet>
+                                }
+                                else if (pegawai.StatusPenilaian == "Not Set")
+                                {
+                                    <DialogNotSet></DialogNotSet>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private string SearchTerm { get; set; } = string.Empty;
+
+    // List of Pegawai (example data)
+    private List<Pegawai> PegawaiList = new List<Pegawai>
+    {
+        new Pegawai { No = 1, Nopek = "2070", NamaPegawai = "Ramadhan Surya Handika", Jabatan = "Section Head Project Engineering", Kontribusi = "MGR ENG & DEV", PRL = "18", TMTPRL = "1 Juni 2020", TMTDinas = "12 Maret 2012", StatusKeluarga = "203", StatusPenilaian = "Set" },
+        new Pegawai { No = 2, Nopek = "2056", NamaPegawai = "Dinda Rachma Ayu Mauliza", Jabatan = "Area Manager SSC ICT", Kontribusi = "MGR ENG & DEV", PRL = "20", TMTPRL = "1 Juni 2020", TMTDinas = "12 Maret 2012", StatusKeluarga = "203", StatusPenilaian = "Set" },
+        new Pegawai { No = 3, Nopek = "2048", NamaPegawai = "Moh. Magistra Jahfal", Jabatan = "Manager Maintenance Planning & Support", Kontribusi = "", PRL = "20", TMTPRL = "1 Juni 2020", TMTDinas = "12 Maret 2012", StatusKeluarga = "", StatusPenilaian = "Not Set" },
+        new Pegawai { No = 4, Nopek = "2028", NamaPegawai = "Kerin Cecillia Belo", Jabatan = "Sr Supervisor Facility & Quality", Kontribusi = "MGR ENG & DEV", PRL = "16", TMTPRL = "1 Juni 2020", TMTDinas = "12 Maret 2012", StatusKeluarga = "203", StatusPenilaian = "Set" },
+        new Pegawai { No = 5, Nopek = "2080", NamaPegawai = "Dayinta Palupi Tyas Seta", Jabatan = "Area Manager HC", Kontribusi = "", PRL = "20", TMTPRL = "1 Juni 2020", TMTDinas = "12 Maret 2012", StatusKeluarga = "203", StatusPenilaian = "Not Set" }
+    };
+
+    // Filter the PegawaiList based on the SearchTerm
+    private IEnumerable<Pegawai> FilteredPegawaiList()
+    {
+        if (string.IsNullOrEmpty(SearchTerm))
+        {
+            return PegawaiList;
+        }
+        return PegawaiList.Where(p => p.NamaPegawai.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase));
+    }
+
+    // Synchronize from SAP (placeholder logic)
+    private void SynchronizeFromSAP()
+    {
+        // Logic for synchronizing data from SAP would go here
+    }
+
+    // Method to return CSS class based on StatusPenilaian
+    private string GetRowClass(string statusPenilaian)
+    {
+        if (statusPenilaian == "Set")
+        {
+            return "table-hijau"; // Hijau untuk "Set"
+        }
+        else if (statusPenilaian == "Not Set")
+        {
+            return "table-danger"; // Merah untuk "Not Set"
+        }
+        return string.Empty; // Default tanpa warna
+    }
+
+    public class Pegawai
+    {
+        public int No { get; set; }
+        public string Nopek { get; set; }
+        public string NamaPegawai { get; set; }
+        public string Jabatan { get; set; }
+        public string Kontribusi { get; set; }
+        public string PRL { get; set; }
+        public string TMTPRL { get; set; }
+        public string TMTDinas { get; set; }
+        public string StatusKeluarga { get; set; }
+        public string StatusPenilaian { get; set; }
+    }
+}

@@ -1,0 +1,59 @@
+﻿<div>
+    <button onclick="document.getElementById('rdp-dialog').showModal()" class="btn btn-light d-flex align-items-center custom-btn">
+        <span class="bi bi-clock-history" aria-hidden="true"></span> Set Durasi Lelang
+    </button>
+
+    <dialog id="rdp-dialog" style="width: 400px; border-radius: 10px; padding: 20px; border-color: white; max-width: 90vw;">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Atur Durasi Lelang</b></h1>
+
+            <!-- Input untuk memilih tanggal dan waktu mulai -->
+            <div class="mb-3">
+                <label for="start-time" class="form-label"><b>Tanggal dan Waktu Mulai Lelang</b></label>
+                <input type="datetime-local" id="start-time" name="start-time" class="form-control" required>
+            </div>
+
+            <!-- Input untuk memilih tanggal dan waktu selesai -->
+            <div class="mb-3">
+                <label for="end-time" class="form-label"><b>Tanggal dan Waktu Selesai Lelang</b></label>
+                <input type="datetime-local" id="end-time" name="end-time" class="form-control" required>
+            </div>
+
+            <!-- Modal actions -->
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" onclick="document.getElementById('rdp-dialog').close()" class="btn btn-batal">Batal</button>
+                <button type="submit" class="btn btn-simpan">Simpan</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+<style>
+    .bi-clock-history {
+        width: 20px; /* Tentukan lebar ikon */
+        height: 20px; /* Tentukan tinggi ikon */
+        background-size: contain; /* Menyesuaikan ukuran ikon */
+        display: inline-block; /* Mengubah elemen menjadi block untuk mendukung ukuran */
+        vertical-align: middle; /* Penempatan ikon dan teks sejajar secara vertikal */
+        border: none;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .btn-batal {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .btn-simpan {
+        background-color: #3075BB;
+        color: white;
+        border: 1px solid black;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+</style>

@@ -1,0 +1,170 @@
+﻿<div>
+    <button onclick="document.getElementById('rdp-dialog').showModal()" class="btn btn-primary float-end">
+        <span class="bi bi-houses" aria-hidden="true"></span> Tambah RDP
+    </button>
+
+    <dialog id="rdp-dialog" style="width: 800px; border-radius: 10px; padding: 20px; border-color: white">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Tambah RDP</b></h1>
+
+            <!-- Alamat RDP -->
+            <div class="mb-3">
+                <label><b>Kondisi</b></label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="layak" name="kondisi" value="layak" checked />
+                    <label class="form-check-label" for="layak">Layak</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tidaklayak" name="kondisi" value="tidaklayak" />
+                    <label class="form-check-label" for="tidaklayak">Tidak Layak</label>
+                </div>
+            </div>
+
+            <!-- Status RDP -->
+            <div class="mb-3">
+                <label><b>Status RDP</b></label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="alihfungsi" name="statusRdp" value="alihfungsi" />
+                    <label class="form-check-label" for="alihfungsi">Alih Fungsi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="dihuni" name="statusRdp" value="dihuni" checked />
+                    <label class="form-check-label" for="dihuni">Dihuni</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="kosong" name="statusRdp" value="kosong" />
+                    <label class="form-check-label" for="kosong">Kosong</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="peminjaman" name="statusRdp" value="peminjaman" />
+                    <label class="form-check-label" for="peminjaman">Peminjaman</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tersedia" name="statusRdp" value="tersedia" />
+                    <label class="form-check-label" for="tersedia">Tersedia</label>
+                </div>
+            </div>
+
+            <!-- No. RDP -->
+            <div class="mb-3">
+                <label for="noRdp"><b>No. RDP</b></label>
+                <input type="text" id="noRdp" class="form-control" placeholder="Masukkan Tipe RDP" />
+            </div>
+
+            <!-- Keterangan -->
+            <div class="mb-3">
+                <label for="keterangan"><b>Keterangan</b></label>
+                <input type="text" id="keterangan" class="form-control" value="Pekerja RU IV" />
+            </div>
+
+            <!-- Keterangan 2 -->
+            <div class="mb-3">
+                <label for="keterangan2"><b>Keterangan 2</b></label>
+                <input type="text" id="keterangan2" class="form-control" value="Dihuni bersama Sdr. Rio Haryanto (Nopek: 2464813)" />
+            </div>
+
+            <!-- Tipe Cluster -->
+            <div class="mb-3">
+                <label for="tipeCluster"><b>Tipe Cluster</b></label>
+                <input type="text" id="tipeCluster" class="form-control" placeholder="Masukkan Tipe Cluster" />
+            </div>
+
+            <!-- Fasilitas -->
+            <div class="mb-3">
+                <label for="tipeCluster"><b>Fasilitas</b></label>
+                <br />
+                <a href="/TambahFasilitas" class="btn btn-primary mt-2">Tambah Fasilitas</a>
+            </div>
+
+            <!-- RT and RW Details -->
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="rt"><b>RT</b></label>
+                    <select id="rt" class="form-select">
+                        <option value="001">001</option>
+                        <option value="002">002</option>
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="namaKetuaRt"><b>Nama Ketua RT</b></label>
+                    <input type="text" id="namaKetuaRt" class="form-control" value="Reza" />
+                </div>
+                <div class="col-md-3">
+                    <label for="rw"><b>RW</b></label>
+                    <select id="rw" class="form-select">
+                        <option value="002">002</option>
+                        <option value="003">003</option>
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="namaKetuaRw"><b>Nama Ketua RW</b></label>
+                    <input type="text" id="namaKetuaRw" class="form-control" value="Tegar" />
+                </div>
+            </div>
+
+            <!-- Alamat -->
+            <div class="mb-3">
+                <label for="alamat"><b>Alamat</b></label>
+                <input type="text" id="alamat" class="form-control" value="Komperta Gunung Simping, Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah, 32224" />
+            </div>
+
+            <!-- Dokumentasi -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi RDP Tampak Depan</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi RDP Tampak Belakang</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Ruang Tamu RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Kamar Tidur RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Garasi RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Kamar Mandi RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label><b>Dokumentasi Fasilitas RDP</b></label>
+                <input type="file" class="form-control" />
+            </div>
+
+            <!-- Submit button -->
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="button" class="btn btn-secondary">Batal</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+<style>
+    .bi-houses {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='white'%20class='bi%20bi-houses'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M5.793%201a1%201%200%200%201%201.414%200l.647.646a.5.5%200%201%201-.708.708L6.5%201.707%202%206.207V12.5a.5.5%200%200%200%20.5.5.5.5%200%200%201%200%201A1.5%201.5%200%200%201%201%2012.5V7.207l-.146.147a.5.5%200%200%201-.708-.708zm3%201a1%201%200%200%201%201.414%200L12%203.793V2.5a.5.5%200%200%201%20.5-.5h1a.5.5%200%200%201%20.5.5v3.293l1.854%201.853a.5.5%200%200%201-.708.708L15%208.207V13.5a1.5%201.5%200%200%201-1.5%201.5h-8A1.5%201.5%200%200%201%204%2013.5V8.207l-.146.147a.5.5%201%201%201-.708-.708zm.707.707L5%207.207V13.5a.5.5%200%200%200%20.5.5h8a.5.5%200%200%200%20.5-.5V7.207z'/%3E%3C/svg%3E");
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+</style>

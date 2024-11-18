@@ -1,0 +1,38 @@
+﻿@page "/nonlelangnopek"
+@inject IJSRuntime js
+
+<PageTitle>Non Lelang</PageTitle>
+
+<div class="container mt-3">
+    <div class="badge bg-light text-dark mb-2">
+        <h1 class="page-title">Non Lelang</h1>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <!-- Date -->
+            <span class="badge bg-light text-dark mt-2">
+                <span>
+                    <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                </span>
+                @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+            </span>
+        </div>
+    </div>
+
+    <!-- Search bar and Buttons -->
+    <div class="row mb-3 align-items-center">
+        <div class="col-md-6">
+            <!-- Input Pencarian di posisi kiri -->
+            <input class="form-control" type="text" placeholder="Masukkan Nopek" @bind="SearchTerm" />
+        </div>
+        <div class="col-md-2">
+            <!-- Button langsung mengarah ke halaman nonlelangpegawai -->
+            <a href="/nonlelangpegawai" class="btn btn-primary text-white">Cari</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string SearchTerm { get; set; } = string.Empty;
+}

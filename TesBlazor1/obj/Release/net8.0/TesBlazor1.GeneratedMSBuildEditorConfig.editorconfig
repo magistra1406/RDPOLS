@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TesBlazor1
+build_property.RootNamespace = TesBlazor1
+build_property.ProjectDir = D:\Data\Master\Internship\PT KPI\Project RDP\Front End .NET\TES 1\TesBlazor1\TesBlazor1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Data\Master\Internship\PT KPI\Project RDP\Front End .NET\TES 1\TesBlazor1\TesBlazor1
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Account/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY2Vzc0RlbmllZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Account/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Account/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ291dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DialogPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGlhbG9nUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/TambahPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcVGFtYmFoUGVnYXdhaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Data RDP/DataRDPhc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFJEUFxEYXRhUkRQaGMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Laporan RDP/LaporanRDPhc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMYXBvcmFuIFJEUFxMYXBvcmFuUkRQaGMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Lelang/Lelang.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xMZWxhbmdcTGVsYW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-193xonvjrp
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wqbxipuvb9
+
+[D:/Data/Master/Internship/PT KPI/Project RDP/Front End .NET/TES 1/TesBlazor1/TesBlazor1/Components/Pages/HC/Data Pegawai/DataPegawai.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIQ1xEYXRhIFBlZ2F3YWlcRGF0YVBlZ2F3YWkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-f2lvs43j5a

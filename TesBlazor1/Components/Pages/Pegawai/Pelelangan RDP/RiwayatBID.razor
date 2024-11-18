@@ -1,0 +1,404 @@
+﻿@page "/riwayat-lelang-rdp-pegawai"
+@attribute [StreamRendering]
+
+<PageTitle>Riwayat Bid Pelelangan RDP</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <!-- Page Title -->
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="badge bg-light text-dark mb-2">
+                    <h1 class="page-title">Riwayat Bid Pelelangan RDP</h1>
+                </div>
+                <div>
+                    <DialogNotif></DialogNotif>
+                </div>
+            </div>
+
+            <!-- Date and Buttons Row -->
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <!-- Date Badge -->
+                <span class="badge bg-light text-dark">
+                    <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                    @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                </span>
+            </div>
+            <div class="d-flex align-items-center gap-2 mt-4">
+                <!-- Search Bar -->
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Cari RDP" />
+                </div>
+
+                <!-- Dropdowns moved to the right -->
+                <div class="d-flex gap-2 ms-0 align-items-center">
+                    <DialogInfo></DialogInfo>
+                </div>
+            </div>
+            <!-- RDP List -->
+            <div class="row mb-4 mt-3">
+                <div class="col-12">
+                    <!-- RDP Group (Gunung Simping) -->
+                    <div class="card-lelang" style="background-color: #358DC7;">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Riwayat Bid (3)</p>
+
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold; font-style: italic">
+                                        30/09/2024 – 15/10/2024
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; color: #FFFFFF; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <table class="table table-bordered m-0" style="background-color:#EDFFC3">
+                            <thead style="background-color: black; color: white;">
+                                <tr>
+                                    <th style="text-align: center;">No</th>
+                                    <th style="text-align: center;">Alamat</th>
+                                    <th style="text-align: center;">No RDP</th>
+                                    <th style="text-align: center;">Tipe RDP</th>
+                                    <th style="text-align: center;">Cluster</th>
+                                    <th style="text-align: center;">Status RDP</th>
+                                    <th style="text-align: center;">Kondisi</th>
+                                    <th style="text-align: center;">Aksi</th>
+                                    <th style="text-align: center;">Pelelangan</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- Gunung Simping Entry -->
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">Gunung Simping</td>
+                                    <td class="text-center">303</td>
+                                    <td class="text-center">Perumahan</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">Tersedia</td>
+                                    <td class="text-center">Layak</td>
+                                    <td class="text-center">
+                                        <NavLink class="btn btn-outline-primary btn-sm" href="/detailRDPpegawai">
+                                            <span class="bi bi-eye" aria-hidden="true"></span>
+                                        </NavLink>
+                                    </td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm">Ikuti</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        <div class="peringkat-pendaftar mt-2 p-2" style="background-color: #EDFFC3; border-radius: 8px;">
+                                            <p class="fw-bold text-secondary">Peringkat Pendaftar:</p>
+                                            <table class="table table-sm table-striped text-center m-0">
+                                                <thead style="font-size: 14px; background-color: black; color: white;">
+                                                    <tr>
+                                                        <th>Nopek</th>
+                                                        <th>Nama</th>
+                                                        <th>Pilihan Ke-</th>
+                                                        <th>Poin</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Pendaftar Data for Gunung Simping -->
+                                                    <tr style="background-color: #A2CE40">
+                                                        <td>12345</td>
+                                                        <td>Andi</td>
+                                                        <td>1</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12346</td>
+                                                        <td>Budi</td>
+                                                        <td>2</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Additional Rows for Gunung Simping -->
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">Gunung Simping</td>
+                                    <td class="text-center">304</td>
+                                    <td class="text-center">Perumahan</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">Tersedia</td>
+                                    <td class="text-center">Layak</td>
+                                    <td class="text-center">
+                                        <NavLink class="btn btn-outline-primary btn-sm" href="/detailRDPpegawai">
+                                            <span class="bi bi-eye" aria-hidden="true"></span>
+                                        </NavLink>
+                                    </td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm">Ikuti</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        <div class="peringkat-pendaftar mt-2 p-2" style="background-color: #EDFFC3; border-radius: 8px;">
+                                            <p class="fw-bold text-secondary">Peringkat Pendaftar:</p>
+                                            <table class="table table-sm table-striped text-center m-0">
+                                                <thead style="font-size: 14px; background-color: black; color: white;">
+                                                    <tr>
+                                                        <th>Nopek</th>
+                                                        <th>Nama</th>
+                                                        <th>Pilihan Ke-</th>
+                                                        <th>Poin</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Pendaftar Data for Gunung Simping -->
+                                                    <tr style="background-color: #A2CE40">
+                                                        <td>12345</td>
+                                                        <td>Andi</td>
+                                                        <td>1</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12346</td>
+                                                        <td>Budi</td>
+                                                        <td>2</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">Gunung Simping</td>
+                                    <td class="text-center">304</td>
+                                    <td class="text-center">Perumahan</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">Tersedia</td>
+                                    <td class="text-center">Layak</td>
+                                    <td class="text-center">
+                                        <NavLink class="btn btn-outline-primary btn-sm" href="/detailRDPpegawai">
+                                            <span class="bi bi-eye" aria-hidden="true"></span>
+                                        </NavLink>
+                                    </td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm">Ikuti</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        <div class="peringkat-pendaftar mt-2 p-2" style="background-color: #EDFFC3; border-radius: 8px;">
+                                            <p class="fw-bold text-secondary">Peringkat Pendaftar:</p>
+                                            <table class="table table-sm table-striped text-center m-0">
+                                                <thead style="font-size: 14px; background-color: black; color: white;">
+                                                    <tr>
+                                                        <th>Nopek</th>
+                                                        <th>Nama</th>
+                                                        <th>Pilihan Ke-</th>
+                                                        <th>Poin</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Pendaftar Data for Gunung Simping -->
+                                                    <tr style="background-color: #A2CE40">
+                                                        <td>12345</td>
+                                                        <td>Andi</td>
+                                                        <td>1</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12346</td>
+                                                        <td>Budi</td>
+                                                        <td>2</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        @code {
+        // Define your list for RDP data and binding logic for dynamic updates
+        private List<LelangRDPPegawai> rdpData = new List<LelangRDPPegawai>
+        {
+        new LelangRDPPegawai
+        {
+        No = 1,
+        Participants = new List<Participant>
+        {
+        new Participant { Nopek = "2080", Nama = "Dayinta Palupi Tyas Seta", Pilihan = "1", Poin = "5408,90", RowColor = "#A2CE40", Icon = "<span class=\"icon\">🥇</span>"},
+        new Participant { Nopek = "2056", Nama = "Dinda Rachma Ayu Mauliza", Pilihan = "2", Poin = "5246,60", RowColor = "#E5F4C1" },
+        new Participant { Nopek = "2070", Nama = "Ramadhan Surya Handika", Pilihan = "3", Poin = "4868,50", RowColor = "#EDFFC3" }
+        }
+        }
+        // Additional RDP data can be added here
+        };
+
+        public class LelangRDPPegawai
+        {
+            public int No { get; set; }
+            public List<Participant> Participants { get; set; }
+            public string RowColor { get; set; }
+        }
+
+        public class Participant
+        {
+            public string Nopek { get; set; }
+            public string Nama { get; set; }
+            public string Pilihan { get; set; }
+            public string Poin { get; set; }
+            public string RowColor { get; set; }
+            public string Icon { get; set; }
+        }
+        }
+
+        <style>
+            .card-lelang {
+                margin-bottom: 15px;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-lelang {
+                background-color: #358DC7;
+                border-radius: 15px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+
+            .action-buttons button, .action-buttons select {
+                min-width: 150px;
+            }
+
+            .accordion-button {
+                font-weight: bold;
+                color: #fff;
+            }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+            .accordion-header .d-flex {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .not-set {
+                color: #ffc107;
+            }
+
+            .btn {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .custom-btn {
+                background-color: white !important;
+                color: black !important; /* Agar teks atau ikon terlihat */
+            }
+            .btn-outline-primary {
+                background-color: white;
+                border: none;
+                box-shadow: none;
+            }
+
+                .btn-outline-primary i {
+                    color: #358DC7;
+                }
+
+            .card-lelang {
+                margin-bottom: 15px;
+                border-radius: 8px;
+                background-color: #F8F9FA;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-header {
+                border-radius: 15px 15px 0 0;
+            }
+
+            .badge.bg-danger {
+                background-color: #dc3545;
+                padding: 8px 12px;
+                font-weight: bold;
+                font-size: 0.9rem;
+                color: white;
+            }
+
+            /* Table background color */
+            .table {
+                background-color: white;
+            }
+
+            .table-bordered td, .table-bordered th {
+                padding: 10px;
+            }
+
+            .peringkat-pendaftar {
+                background-color: #f8f8f8;
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+            .btn-primary {
+                background-color: #358DC7;
+                border: none;
+            }
+
+            .table-striped tbody tr:nth-of-type(odd) {
+                background-color: #f2f2f2;
+            }
+
+            .bg-primary {
+                background-color: #007bff !important;
+            }
+
+            .bi-eye {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-eye'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M16%208s-3-5.5-8-5.5S0%208%200%208s3%205.5%208%205.5S16%208%2016%208M1.173%208a13%2013%200%200%201%201.66-2.043C4.12%204.668%205.88%203.5%208%203.5s3.879%201.168%205.168%202.457A13%2013%200%200%201%2014.828%208q-.086.13-.195.288c-.335.48-.83%201.12-1.465%201.755C11.879%2011.332%2010.119%2012.5%208%2012.5s-3.879-1.168-5.168-2.457A13%2013%200%200%201%201.172%208z'/%3E%3Cpath%20d='M8%205.5a2.5%202.5%200%201%200%200%205%202.5%202.5%200%200%200%200-5M4.5%208a3.5%203.5%200%201%201%207%200%203.5%203.5%200%200%201-7%200'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-clock-history {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-clock-history'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8.515%201.019A7%207%200%200%200%208%201V0a8%208%200%200%201%20.589.022zm2.004.45a7%207%200%200%200-.985-.299l.219-.976q.576.129%201.126.342zm1.37.71a7%207%200%200%200-.439-.27l.493-.87a8%208%200%200%201%20.979.654l-.615.789a7%207%200%200%200-.418-.302zm1.834%201.79a7%207%200%200%200-.653-.796l.724-.69q.406.429.747.91zm.744%201.352a7%207%200%200%200-.214-.468l.893-.45a8%208%200%200%201%20.45%201.088l-.95.313a7%207%200%200%200-.179-.483m.53%202.507a7%207%200%200%200-.1-1.025l.985-.17q.1.58.116%201.17zm-.131%201.538q.05-.254.081-.51l.993.123a8%208%200%200%201-.23%201.155l-.964-.267q.069-.247.12-.501m-.952%202.379q.276-.436.486-.908l.914.405q-.24.54-.555%201.038zm-.964%201.205q.183-.183.35-.378l.758.653a8%208%200%200%201-.401.432z'/%3E%3Cpath%20d='M8%201a7%207%200%201%200%204.95%2011.95l.707.707A8.001%208.001%200%201%201%208%200z'/%3E%3Cpath%20d='M7.5%203a.5.5%200%200%201%20.5.5v5.21l3.248%201.856a.5.5%200%200%201-.496.868l-3.5-2A.5.5%200%200%201%207%209V3.5a.5.5%200%200%201%20.5-.5'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+        </style>
+
+    </Authorized>
+</AuthorizeView>

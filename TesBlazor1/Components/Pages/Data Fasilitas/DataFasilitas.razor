@@ -1,0 +1,184 @@
+﻿@page "/Datafasilitas"
+@attribute [StreamRendering]
+
+<PageTitle>Data Fasilitas</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <!-- Main container -->
+        <div class="container mt-3">
+            <!-- Page title -->
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">Data Fasilitas</h1>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Date on the left -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @currentDate
+                    </span>
+                </div>
+            </div>
+
+            <!-- Accordion for expandable panels -->
+            <div class="accordion mt-4" id="accordionExample">
+                @foreach (var facilitySection in Sections)
+                {
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading@facilitySection.Name">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse@facilitySection.Name" aria-expanded="false" aria-controls="collapse@facilitySection.Name">
+                                @facilitySection.Name
+                            </button>
+                        </h2>
+                        <div id="collapse@facilitySection.Name" class="accordion-collapse collapse" aria-labelledby="heading@facilitySection.Name" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    @foreach (var item in facilitySection.Items)
+                                    {
+                                        <div class="col-md-3 item-box">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>@item.Name</span>
+                                                <span class="bi bi-chevron-down"></span>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        @code {
+        private string currentDate;
+
+        protected override async Task OnInitializedAsync()
+        {
+            currentDate = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            await Task.Delay(1);  // Ensures async processing
+            StateHasChanged();     // Triggers component to re-render with updated state
+        }
+
+        // Sample data for the accordion sections
+        private List<Section> Sections = new List<Section>
+        {
+        new Section
+        {
+        Name = "General Manager",
+        Items = new List<Item>
+        {
+        new Item { Name = "Mesin Cuci" },
+        new Item { Name = "AC" },
+        new Item { Name = "Kasur" },
+        new Item { Name = "Gas" },
+        new Item { Name = "Lemari" },
+        new Item { Name = "Kompor" },
+        new Item { Name = "Kursi" },
+        new Item { Name = "Panci" },
+        new Item { Name = "Karpet" },
+        new Item { Name = "Sendok" },
+        new Item { Name = "TV" },
+        new Item { Name = "Sapu" },
+        new Item { Name = "Oven" },
+        new Item { Name = "Pisau" },
+        new Item { Name = "Rak Buku" },
+        new Item { Name = "Dispenser" },
+        new Item { Name = "Kotak P3K" },
+        new Item { Name = "Lampu Meja" },
+        new Item { Name = "Timbangan" },
+        new Item { Name = "Setrika" },
+        new Item { Name = "Gelas" },
+        new Item { Name = "Rice Cooker" },
+        new Item { Name = "Teko" },
+        new Item { Name = "Gunting" },
+        new Item { Name = "Guling" },
+        new Item { Name = "Lampu" },
+        new Item { Name = "Mesin Cuci" },
+        new Item { Name = "Selang Air" },
+        new Item { Name = "Speaker" },
+        new Item { Name = "Bantal" },
+        }
+        },
+        new Section { Name = "SMOM", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        new Section { Name = "Manager", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        new Section { Name = "Section Head", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        new Section { Name = "RDP Kelas 4", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        new Section { Name = "RDP Kelas 5", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        new Section { Name = "RDP Kelas 6", Items = new List<Item> { new Item { Name = "Item 1" }, new Item { Name = "Item 2" } } },
+        };
+
+        public class Section
+        {
+            public string Name { get; set; }
+            public List<Item> Items { get; set; }
+        }
+
+        public class Item
+        {
+            public string Name { get; set; }
+        }
+        }
+
+        <style>
+            .page-title {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .accordion-item {
+                background-color: #1b7cc1;
+                color: white;
+                margin-bottom: 10px;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .accordion-button {
+                background-color: #1b7cc1;
+                color: white;
+                border-radius: 8px;
+            }
+
+                .accordion-button:not(.collapsed) {
+                    background-color: #1365a5;
+                    color: white;
+                }
+
+            .accordion-body {
+                background-color: white;
+                color: black;
+                border-top: 1px solid #ddd;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+
+                .accordion-body .row .col-md-3 {
+                    margin-bottom: 15px;
+                }
+
+            .item-box {
+                padding: 5px;
+                background-color: #f8f9fa;
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+            }
+
+                .item-box:hover {
+                    background-color: #e0f7fa;
+                }
+
+            .accordion-button::after {
+                margin-left: auto;
+                transform: rotate(180deg);
+            }
+        </style>
+
+    </Authorized>
+</AuthorizeView>

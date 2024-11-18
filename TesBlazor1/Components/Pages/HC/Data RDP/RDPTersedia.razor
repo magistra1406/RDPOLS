@@ -1,0 +1,294 @@
+﻿@page "/RDPTersedia"
+@attribute [StreamRendering]
+
+<PageTitle>RDP Tersedia</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="container mt-3">
+            <div class="badge bg-light text-dark mb-2">
+                <h1 class="page-title">RDP Tersedia</h1>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Date on the left -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+            <!-- Search Bar, Dropdowns, and Search Button Row -->
+            <div class="d-flex align-items-center gap-2 mt-4">
+                <!-- Search Bar -->
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Cari RDP" />
+                </div>
+
+                <!-- Dropdowns moved to the right -->
+                <div class="d-flex gap-2 ms-0 align-items-center">
+                    <select class="form-select">
+                        <option selected>Alamat RDP</option>
+                        <option value="1">Gunung Simping</option>
+                        <option value="2">Donan</option>
+                        <option value="3">Sidanegara</option>
+                        <option value="4">Tegal Kamulyan</option>
+                        <option value="5">Apartemen</option>
+                    </select>
+                    <select class="form-select">
+                        <option selected>Tipe Cluster</option>
+                        <option value="1">Cluster 1</option>
+                        <option value="2">Cluster 2</option>
+                        <option value="3">Cluster 3</option>
+                        <option value="4">Cluster 4</option>
+                        <option value="5">Cluster 5</option>
+                        <option value="6">Cluster 6</option>
+                    </select>
+                    <NavLink class="btn btn-light d-flex align-items-center custom-btn" href="/nonlelangnopek">
+                        <span class="bi bi-person-fill-add me-2" aria-hidden="true"></span> Non Lelang
+                    </NavLink>
+                    <DialogDurasi></DialogDurasi>
+                </div>
+            </div>
+
+            <div class="row mb-4" style="margin-top: 15px">
+
+                <div class="col-12">
+
+                    <div class="card-lelang mb-3">
+
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Gunung Simping</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold">
+                                        NOT SET
+                                    </span>
+                                    <span> <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; width: 20px; margin-left: 1rem; margin-right: 0.5rem" /></span>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <table class="table table-striped text-center m-0" style="width: 100%; margin: 0; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden;">
+                            <!-- Set margin to 0 and width to 100% -->
+                            <thead style="background-color: black; color: white;">
+                                <tr style="font-weight: normal; font-size: 14px">
+                                    <th>No</th>
+                                    <th>Alamat</th>
+                                    <th>No RDP</th>
+                                    <th>Tipe RDP</th>
+                                    <th>Cluster</th>
+                                    <th>Status RDP</th>
+                                    <th>Kondisi</th>
+                                    <th>Aksi</th>
+                                    <th>Tawarkan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var rdp in rdpData)
+                                {
+                                    <tr style="background-color: @rdp.RowColor; font-size: 14px; ">
+                                        <td>@rdp.No</td>
+                                        <td>@rdp.Alamat</td>
+                                        <td>@rdp.NoRDP</td>
+                                        <td>@rdp.TipeRDP</td>
+                                        <td>@rdp.Cluster</td>
+                                        <td>@rdp.StatusRDP</td>
+                                        <td>@rdp.Kondisi</td>
+                                        <td>
+                                            <NavLink class="btn btn-light" href="/">
+                                                <span class="bi bi-filetype-pdf" aria-hidden="true"></span>
+                                            </NavLink>
+                                            <NavLink class="btn btn-light" href="/">
+                                                <span class="bi bi-eye" aria-hidden="true"></span>
+                                            </NavLink>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="bid" name="bidRdp" value="kosong" class="form-check-input">
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="card-lelang">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-6" style="margin-left: 12px; margin-top: 12px; color: white; font-size: 16px">Donan</p>
+                            </div>
+                            <div class="col text-right">
+                                <p class="mb-6" style="text-align: right; margin-right: 12px; margin-top: 12px; color: #FFF16E; font-size: 16px; font-style: italic;">
+                                    Periode Lelang
+                                    <span style="font-size: 14px; color: white; font-style: normal; text-decoration: underline; font-weight: bold">
+                                        NOT SET
+                                    </span>
+                                    <span>
+                                        <img src="/images/arrow-bot.png" alt="Alternate Text" style="height: 10px; width: 20px; margin-left: 1rem; margin-right: 0.5rem" />
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="auction-button-container mt-4 text-end">
+                <a href="/lelang-rdp" class="ms-auto text-decoration-none">
+                    <button class="btn btn-success">Buka Lelang</button>
+                </a>
+            </div>
+        </div>
+
+        @code {
+        private List<RDPModel> rdpData = new List<RDPModel>
+        {
+        new RDPModel { No = 1, Alamat = "Gunung Simping", NoRDP = 301, TipeRDP = "Perumahan", Cluster = "4", SK = "SK001", StatusRDP = "Tersedia", Kondisi = "Layak", RowColor = "#EDFFC3" },
+        new RDPModel { No = 2, Alamat = "Gunung Simping", NoRDP = 302, TipeRDP = "Perumahan", Cluster = "4", SK = "SK002", StatusRDP = "Tersedia", Kondisi = "Layak", RowColor = "#E5F4C1" },
+        new RDPModel { No = 3, Alamat = "Gunung Simping", NoRDP = 303, TipeRDP = "Perumahan", Cluster = "5", SK = "SK003", StatusRDP = "Tersedia", Kondisi = "Layak", RowColor = "#EDFFC3" },
+
+        };
+
+        private void OpenPdfModal(RDPModel rdp)
+        {
+            // Logic to open PDF modal
+        }
+
+        public class RDPModel
+        {
+            public int No { get; set; }
+            public string Alamat { get; set; }
+            public int NoRDP { get; set; }
+            public string TipeRDP { get; set; }
+            public string Cluster { get; set; }
+            public string SK { get; set; }
+            public string StatusRDP { get; set; }
+            public string Kondisi { get; set; }
+            public string RowColor { get; set; }
+        }
+        }
+
+        <style>
+            .header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-lelang {
+                background-color: #358DC7;
+                border-radius: 15px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+
+
+            .search-bar input,
+            .form-select {
+                width: 100%;
+                max-width: 145px; /* Set a maximum width for a smaller size */
+            }
+
+            .action-buttons button, .action-buttons select {
+                min-width: 150px;
+            }
+
+            .accordion-button {
+                font-weight: bold;
+                color: #fff;
+            }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+            .accordion-header .d-flex {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .periode-lelang {
+                font-size: 14px;
+                color: #f8f9fa;
+                font-weight: bold;
+            }
+
+            .not-set {
+                color: #ffc107;
+            }
+
+
+            .btn {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .btn-success {
+                padding: 10px 20px;
+                font-weight: bold;
+                background-color: #585858;
+                border-color: #C9C9C9;
+                color: #ffff;
+            }
+
+            .bi-eye {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-eye'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M16%208s-3-5.5-8-5.5S0%208%200%208s3%205.5%208%205.5S16%208%2016%208M1.173%208a13%2013%200%200%201%201.66-2.043C4.12%204.668%205.88%203.5%208%203.5s3.879%201.168%205.168%202.457A13%2013%200%200%201%2014.828%208q-.086.13-.195.288c-.335.48-.83%201.12-1.465%201.755C11.879%2011.332%2010.119%2012.5%208%2012.5s-3.879-1.168-5.168-2.457A13%2013%200%200%201%201.172%208z'/%3E%3Cpath%20d='M8%205.5a2.5%202.5%200%201%200%200%205%202.5%202.5%200%200%200%200-5M4.5%208a3.5%203.5%200%201%201%207%200%203.5%203.5%200%200%201-7%200'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-filetype-pdf {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-filetype-pdf'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M14%204.5V14a2%202%200%200%201-2%202h-1v-1h1a1%201%200%200%200%201-1V4.5h-2A1.5%201.5%200%200%201%209.5%203V1H4a1%201%200%200%200-1%201v9H2V2a2%202%200%200%201%202-2h5.5zM1.6%2011.85H0v3.999h.791v-1.342h.803q.43%200%20.732-.173.305-.175.463-.474a1.4%201.4%200%200%200%20.161-.677q0-.375-.158-.677a1.2%201.2%200%200%200-.46-.477q-.3-.18-.732-.179m.545%201.333a.8.8%200%200%201-.085.38.57.57%200%200%201-.238.241.8.8%200%200%201-.375.082H.788V12.48h.66q.327%200%20.512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602%200%20.998-.237a1.45%201.45%200%200%200%20.595-.689q.196-.45.196-1.084%200-.63-.196-1.075a1.43%201.43%200%200%200-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371%200%20.609.152a.9.9%200%200%201%20.354.454q.118.302.118.753a2.3%202.3%200%200%201-.068.592%201.1%201.1%200%200%201-.196.422.8.8%200%200%201-.334.252%201.3%201.3%200%200%201-.483.082h-.563zm3.743%201.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z'/%3E%3C/svg%3E");
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-person-fill-add {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person-fill-add'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M12.5%2016a3.5%203.5%200%201%200%200-7%203.5%203.5%200%200%200%200%207m.5-5v1h1a.5.5%200%200%201%200%201h-1v1a.5.5%200%200%201-1%200v-1h-1a.5.5%200%200%201%200-1h1v-1a.5.5%200%200%201%201%200m-2-6a3%203%200%201%201-6%200%203%203%200%200%201%206%200'%2F%3E%3Cpath%20d='M2%2013c0%201%201%201%201%201h5.256A4.5%204.5%200%200%201%208%2012.5a4.5%204.5%200%200%201%201.544-3.393Q8.844%209.002%208%209c-5%200-6%203-6%204'%2F%3E%3C%2Fsvg%3E");
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .bi-clock-history {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-clock-history'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8.515%201.019A7%207%200%200%200%208%201V0a8%208%200%200%201%20.589.022zm2.004.45a7%207%200%200%200-.985-.299l.219-.976q.576.129%201.126.342zm1.37.71a7%207%200%200%200-.439-.27l.493-.87a8%208%200%200%201%20.979.654l-.615.789a7%207%200%200%200-.418-.302zm1.834%201.79a7%207%200%200%200-.653-.796l.724-.69q.406.429.747.91zm.744%201.352a7%207%200%200%200-.214-.468l.893-.45a8%208%200%200%201%20.45%201.088l-.95.313a7%207%200%200%200-.179-.483m.53%202.507a7%207%200%200%200-.1-1.025l.985-.17q.1.58.116%201.17zm-.131%201.538q.05-.254.081-.51l.993.123a8%208%200%200%201-.23%201.155l-.964-.267q.069-.247.12-.501m-.952%202.379q.276-.436.486-.908l.914.405q-.24.54-.555%201.038zm-.964%201.205q.183-.183.35-.378l.758.653a8%208%200%200%201-.401.432z'/%3E%3Cpath%20d='M8%201a7%207%200%201%200%204.95%2011.95l.707.707A8.001%208.001%200%201%201%208%200z'/%3E%3Cpath%20d='M7.5%203a.5.5%200%200%201%20.5.5v5.21l3.248%201.856a.5.5%200%200%201-.496.868l-3.5-2A.5.5%200%200%201%207%209V3.5a.5.5%200%200%201%20.5-.5'/%3E%3C/svg%3E");
+                width: 16px;
+                height: 16px;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                border: none;
+            }
+
+            .custom-btn {
+                background-color: white !important;
+                color: black !important; /* Agar teks atau ikon terlihat */
+                border: 1px solid #ddd; /* Opsi untuk menambahkan border */
+            }
+        </style>
+
+    </Authorized>
+</AuthorizeView>

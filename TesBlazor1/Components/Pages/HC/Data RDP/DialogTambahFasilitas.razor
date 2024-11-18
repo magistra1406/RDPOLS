@@ -1,0 +1,268 @@
+﻿<div>
+    <button onclick="document.getElementById('fasilitas-dialog').showModal()" class="btn btn-primary mt-2">
+        Tambah Fasilitas
+    </button>
+
+    <dialog id="rdp-dialog" style="width: 800px; border-radius: 10px; padding: 20px; border-color: white">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Tambah RDP</b></h1>
+
+            <!-- Alamat RDP -->
+            <div class="mb-3">
+                <label><b>Kondisi</b></label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="layak" name="kondisi" value="layak" checked />
+                    <label class="form-check-label" for="layak">Layak</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tidaklayak" name="kondisi" value="tidaklayak" />
+                    <label class="form-check-label" for="tidaklayak">Tidak Layak</label>
+                </div>
+            </div>
+
+            <!-- Status RDP -->
+            <div class="mb-3">
+                <label><b>Status RDP</b></label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="alihfungsi" name="statusRdp" value="alihfungsi" />
+                    <label class="form-check-label" for="alihfungsi">Alih Fungsi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="dihuni" name="statusRdp" value="dihuni" checked />
+                    <label class="form-check-label" for="dihuni">Dihuni</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="kosong" name="statusRdp" value="kosong" />
+                    <label class="form-check-label" for="kosong">Kosong</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="peminjaman" name="statusRdp" value="peminjaman" />
+                    <label class="form-check-label" for="peminjaman">Peminjaman</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tersedia" name="statusRdp" value="tersedia" />
+                    <label class="form-check-label" for="tersedia">Tersedia</label>
+                </div>
+            </div>
+
+            <!-- No. RDP -->
+            <div class="mb-3">
+                <label for="noRdp"><b>No. RDP</b></label>
+                <input type="text" id="noRdp" class="form-control" placeholder="Masukkan Tipe RDP" />
+            </div>
+
+            <!-- Keterangan -->
+            <div class="mb-3">
+                <label for="keterangan"><b>Keterangan</b></label>
+                <input type="text" id="keterangan" class="form-control" value="Pekerja RU IV" />
+            </div>
+
+            <!-- Keterangan 2 -->
+            <div class="mb-3">
+                <label for="keterangan2"><b>Keterangan 2</b></label>
+                <input type="text" id="keterangan2" class="form-control" value="Dihuni bersama Sdr. Rio Haryanto (Nopek: 2464813)" />
+            </div>
+
+            <!-- Tipe Cluster -->
+            <div class="mb-3">
+                <label for="tipeCluster"><b>Tipe Cluster</b></label>
+                <input type="text" id="tipeCluster" class="form-control" placeholder="Masukkan Tipe Cluster" />
+            </div>
+
+            <!-- Fasilitas -->
+            <div class="mb-3">
+                <label for="tipeCluster"><b>Fasilitas</b></label>
+                <br />
+                <a href="/TambahFasilitas" class="btn btn-primary mt-2">Tambah Fasilitas</a>
+            </div>
+
+            <!-- RT and RW Details -->
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="rt"><b>RT</b></label>
+                    <select id="rt" class="form-select">
+                        <option value="001">001</option>
+                        <option value="002">002</option>
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="namaKetuaRt"><b>Nama Ketua RT</b></label>
+                    <input type="text" id="namaKetuaRt" class="form-control" value="Reza" />
+                </div>
+                <div class="col-md-3">
+                    <label for="rw"><b>RW</b></label>
+                    <select id="rw" class="form-select">
+                        <option value="002">002</option>
+                        <option value="003">003</option>
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="namaKetuaRw"><b>Nama Ketua RW</b></label>
+                    <input type="text" id="namaKetuaRw" class="form-control" value="Tegar" />
+                </div>
+            </div>
+
+            <!-- Alamat -->
+            <div class="mb-3">
+                <label for="alamat"><b>Alamat</b></label>
+                <input type="text" id="alamat" class="form-control" value="Komperta Gunung Simping, Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah, 32224" />
+            </div>
+
+            <!-- Dokumentasi -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi RDP Tampak Depan</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi RDP Tampak Belakang</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Ruang Tamu RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Kamar Tidur RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Garasi RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label><b>Dokumentasi Kamar Mandi RDP</b></label>
+                    <input type="file" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label><b>Dokumentasi Fasilitas RDP</b></label>
+                <input type="file" class="form-control" />
+            </div>
+
+            <!-- Submit button -->
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="button" class="btn btn-secondary">Batal</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+<style>
+    .bi-houses {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='white'%20class='bi%20bi-houses'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M5.793%201a1%201%200%200%201%201.414%200l.647.646a.5.5%200%201%201-.708.708L6.5%201.707%202%206.207V12.5a.5.5%200%200%200%20.5.5.5.5%200%200%201%200%201A1.5%201.5%200%200%201%201%2012.5V7.207l-.146.147a.5.5%200%200%201-.708-.708zm3%201a1%201%200%200%201%201.414%200L12%203.793V2.5a.5.5%200%200%201%20.5-.5h1a.5.5%200%200%201%20.5.5v3.293l1.854%201.853a.5.5%200%200%201-.708.708L15%208.207V13.5a1.5%201.5%200%200%201-1.5%201.5h-8A1.5%201.5%200%200%201%204%2013.5V8.207l-.146.147a.5.5%201%201%201-.708-.708zm.707.707L5%207.207V13.5a.5.5%200%200%200%20.5.5h8a.5.5%200%200%200%20.5-.5V7.207z'/%3E%3C/svg%3E");
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+@* <div>
+    <button click="document.getElementById('fasilitas-dialog').showModal()" class="btn btn-primary mt-2">
+        Tambah Fasilitas
+    </button>
+
+    <dialog id="fasilitas-dialog" style="width: 800px; border-radius: 10px; padding: 20px; border-color: white">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Tambah Fasilitas</b></h1>
+            <!-- Fasilitas Form -->
+            <div class="mb-3">
+                <label for="fasilitasSelect"><b>Fasilitas</b>:</label>
+                <select id="fasilitasSelect" class="form-select">
+                    <option value="">Pilih Fasilitas</option>
+                    <option value="">Mesin Cuci</option>
+                    <option value="">AC</option>
+                    <option value="">Meja</option>
+                    <option value="">Kursi Kerja</option>
+                    <option value="">Gas</option>
+                    <option value="">Lemari</option>
+                    <option value="">TV</option>
+                    <option value="">Kulkas</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="kodeInput"><b>Kode</b>:</label>
+                <input type="text" id="kodeInput" class="form-control" placeholder="Kode" />
+            </div>
+
+            <div class="mb-3">
+                <label><b>Kondisi</b>:</label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="layak" name="kondisi" value="Layak" checked />
+                    <label class="form-check-label" for="layak">Layak</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="tidakLayak" name="kondisi" value="Tidak Layak" />
+                    <label class="form-check-label" for="tidakLayak">Tidak Layak</label>
+                </div>
+                <span class="text-danger float-end">Jumlah pada SK: 5</span>
+            </div>
+
+            <button type="button" class="btn btn-success w-100 mb-3">Tambahkan</button>
+
+            <!-- Fasilitas Table -->
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr style="background-color: #333; color: #fff;">
+                            <th>Kode</th>
+                            <th>Kondisi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #d8f3dc;">
+                            <td>0CENI290</td>
+                            <td>Layak</td>
+                            <td><button class="btn btn-sm" style="background-color: white;"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                        <tr style="background-color: #d8f3dc;">
+                            <td>0CENI291</td>
+                            <td>Layak</td>
+                            <td><button class="btn btn-sm" style="background-color: white;"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <span><b>Jumlah:</b> 2</span>
+            </div>
+
+            <!-- Save and Cancel Buttons -->
+            <div class="text-end mt-3">
+                <a href="/PerbaruiRDP2" class="btn btn-primary">Simpan</a>
+                <button type="button" class="btn btn-outline-secondary">Batal</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+        <style>
+            .bi-trash {
+                background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-trash'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M5.5%205.5A.5.5%200%200%201%206%206v6a.5.5%200%200%201-1%200V6a.5.5%200%200%201%20.5-.5m2.5%200a.5.5%200%200%201%20.5.5v6a.5.5%200%200%201-1%200V6a.5.5%200%200%201%20.5-.5m3%20.5a.5.5%200%200%200-1%200v6a.5.5%200%200%200%201%200z'/%3E%3Cpath%20d='M14.5%203a1%201%200%200%201-1%201H13v9a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V4h-.5a1%201%200%200%201-1-1V2a1%201%200%200%201%201-1H6a1%201%200%200%201%201-1h2a1%201%200%200%201%201%201h3.5a1%201%200%200%201%201%201zM4.118%204%20L4%204.059V13a1%201%200%200%200%201%201h6a1%201%200%200%200%201-1V4.059L11.882%204zM2.5%203h11V2h-11z'/%3E%3C/svg%3E");
+                width: 20px; /* Set the width of the icon */
+                height: 20px; /* Set the height of the icon */
+                background-size: contain; /* Adjust icon size */
+                display: inline-block; /* Change element to block to support sizing */
+                vertical-align: middle; /* Vertically align icon and text */
+                border: none;
+            }
+
+        </style>
+ *@

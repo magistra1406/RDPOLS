@@ -1,0 +1,45 @@
+body[b-rg0sfycfsr] {
+}
+
+.bi-filetype-jpg[b-rg0sfycfsr] {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-filetype-jpg'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M14%204.5V14a2%202%200%2001-2%202h-1v-1h1a1%201%200%20001-1V4.5h-2A1.5%201.5%200%20019.5%203V1H4a1%201%200%2000-1%201v9H2V2a2%202%200%20012-2h5.5zm-4.34%208.132q.114.23.14.492h-.776a.8.8%200%2000-.097-.249.7.7%200%2000-.17-.19.7.7%200%2000-.237-.126%201%201%200%2000-.299-.044q-.428%200-.665.302-.234.301-.234.85v.498q0%20.351.097.615a.9.9%200%2000.304.413.87.87%200%2000.519.146%201%201%200%2000.457-.096.67.67%200%2000.272-.264q.09-.164.091-.363v-.255H8.24v-.59h1.576v.798q0%20.29-.097.55a1.3%201.3%200%2001-.293.458%201.4%201.4%200%2001-.495.313q-.296.111-.697.111a2%202%200%2001-.753-.132%201.45%201.45%200%2001-.533-.377%201.6%201.6%200%2001-.32-.58%202.5%202.5%200%2001-.105-.745v-.506q0-.543.2-.95.201-.406.582-.633.384-.228.926-.228.357%200%20.636.1.28.1.48.275t.314.407ZM0%2014.786q0%20.246.082.465.083.22.243.39.165.17.407.267.246.093.569.093.63%200%20.984-.345.357-.346.358-1.005v-2.725h-.791v2.745q0%20.303-.138.466t-.422.164a.5.5%200%2001-.454-.246.6.6%200%2001-.073-.27H0Zm4.92-2.86H3.322v4h.791v-1.343h.803q.43%200%20.732-.172.305-.177.463-.475.162-.302.161-.677%200-.374-.158-.677a1.2%201.2%200%2000-.46-.477q-.3-.18-.732-.179Zm.546%201.333a.8.8%200%2001-.085.381.57.57%200%2001-.238.24.8.8%200%2001-.375.082H4.11v-1.406h.66q.327%200%20.512.182.185.181.185.521Z'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: 100%;
+}
+
+.bi-pencil-square[b-rg0sfycfsr] {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-pencil-square'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M15.502%201.94a.5.5%200%200%201%200%20.706L14.459%203.69l-2-2L13.502.646a.5.5%200%200%201%20.707%200l1.293%201.293zm-1.75%202.456l-2-2L4.939%209.21a.5.5%200%200%200-.121.196l-.805%202.414a.25.25%200%200%200%20.316.316l2.414-.805a.5.5%200%200%200%20.196-.12l6.813-6.814z'/%3E%3Cpath%20fill-rule='evenodd'%20d='M1%2013.5A1.5%201.5%200%200%200%202.5%2015h11a1.5%201.5%200%200%200%201.5-1.5v-6a.5.5%200%200%200-1%200v6a.5.5%200%200%201-.5.5h-11a.5.5%200%200%201-.5-.5v-11a.5.5%200%200%201%20.5-.5H9a.5.5%200%200%200%200-1H2.5A1.5%201.5%200%200%200%201%202.5z'/%3E%3C/svg%3E");
+    width: 20px; /* Tentukan lebar ikon */
+    height: 20px; /* Tentukan tinggi ikon */
+    background-size: contain; /* Menyesuaikan ukuran ikon */
+    display: inline-block; /* Mengubah elemen menjadi block untuk mendukung ukuran */
+    vertical-align: middle; /* Penempatan ikon dan teks sejajar secara vertikal */
+    border: none;
+}
+
+
+
+/* Menambah lebar minimum kolom bukti */
+.table-bukti[b-rg0sfycfsr] {
+    min-width: 150px; /* Bisa disesuaikan jika dibutuhkan lebih besar */
+    white-space: nowrap; /* Agar teks tidak terpotong atau dibungkus */
+}
+
+
+.file-icon[b-rg0sfycfsr] {
+    margin-right: 5px; /* Jarak antara ikon dan nama file */
+}
+
+  .file-container[b-rg0sfycfsr] {
+        display: inline-flex;
+        align-items: center;
+        background-color: white;
+        padding: 8px 12px;
+        border-radius: 12px;
+        margin-bottom: 8px;
+    }
+.table-hijau[b-rg0sfycfsr] {
+    background-color: #EDFFC3; /* Ganti warna latar belakang */
+}

@@ -1,0 +1,62 @@
+﻿<div>
+    <button onclick="document.getElementById('pegawai-dialog').showModal()" class="btn btn-primary float-end">
+        Tambah Data
+    </button>
+
+    <dialog id="pegawai-dialog" style="width: 800px; border-radius: 10px; padding: 20px; border-color: white;">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Tambah Data Pegawai</b></h1>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label for="nama" class="form-label" style="text-align: left; display: block;"><b>Nama</b></label>
+                    <input type="text" id="nama" name="nama" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="tmt" class="form-label" style="text-align: left; display: block;"><b>TMT</b></label>
+                    <input type="text" id="tmt" name="tmt" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="nopek" class="form-label" style="text-align: left; display: block;"><b>Nopek</b></label>
+                    <input type="text" id="nopek" name="nopek" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="costcenter" class="form-label" style="text-align: left; display: block;"><b>Cost Center</b></label>
+                    <input type="text" id="costcenter" name="costcenter" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="prl" class="form-label" style="text-align: left; display: block;"><b>PRL</b></label>
+                    <input type="text" id="prl" name="prl" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="keluarga" class="form-label" style="text-align: left; display: block;"><b>Status Keluarga</b></label>
+                    <input type="text" id="keluarga" name="keluarga" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="smk" class="form-label" style="text-align: left; display: block;"><b>Input SMK</b></label>
+                    <input type="text" id="smk" name="smk" class="form-control">
+                </div>
+
+            </div>
+
+            <!-- Modal actions -->
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" onclick="document.getElementById('pegawai-dialog').close()" class="btn btn-secondary me-2">Batal</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </form>
+    </dialog>
+</div>
+
+<style>
+    .modal-title {
+        margin-bottom: 1rem; /* Adjust as needed */
+    }
+</style>

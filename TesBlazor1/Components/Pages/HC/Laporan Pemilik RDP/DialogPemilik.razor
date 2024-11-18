@@ -1,0 +1,109 @@
+﻿<div>
+
+    <button onclick="document.getElementById('pemilik-dialog').showModal()" class="btn btn-light">
+        <span class="bi bi-pencil-square" aria-hidden="true"></span>
+    </button>
+
+    <dialog id="pemilik-dialog" style="width: 800px; border-radius: 10px; padding: 20px; border-color: white">
+        <form method="dialog">
+            <h1 class="modal-title fs-5 text-center mb-5"><b>Laporan Tindak Lanjut RDP</b></h1>
+
+
+            <div class="row">
+                <!-- Baris pertama: Alamat RDP -->
+                <div class="col-12 mb-3">
+                    <label for="alamatRdp" class="form-label" style="text-align: left; display: block;"><b>Alamat RDP</b></label>
+                    <input type="text" id="alamatRdp" name="alamatRdp" class="form-control">
+                </div>
+
+                <!-- Baris kedua: Deskripsi Tindak Lanjut -->
+                <div class="col-12 mb-3">
+                    <label for="deskripsi" class="form-label" style="text-align: left; display: block;"><b>Deskripsi Tindak Lanjut</b></label>
+                    <textarea id="deskripsi" name="deskripsi" rows="3" class="form-control"></textarea>
+                </div>
+
+                <!-- Baris ketiga: File input (Laporan dan Laporan Tambahan) -->
+                <div class="row">
+                    <!-- Kolom pertama: Unggah Laporan -->
+                    <div class="col-md-6 mb-3">
+                        <label for="laporan" class="form-label" style="text-align: left; display: block;"><b>Dokumentasi RDP</b></label>
+                        <input type="file" id="laporan" name="laporan" class="form-control custom-file-input">
+                    </div>
+
+                    <!-- Kolom kedua: Laporan Tambahan -->
+                    <div class="col-md-6 mb-3">
+                        <label for="laporanTambahan" class="form-label" style="text-align: left; display: block;"><b>Dokumentasi Tambahan</b></label>
+                        <input type="file" id="laporanTambahan" name="laporanTambahan" class="form-control custom-file-input">
+                    </div>
+                </div>
+
+                <!-- Baris keempat: Drag and Drop Upload -->
+                <div class="col-12 mb-3">
+                    <label class="form-label" style="text-align: left; display: block;"><b>Unggah Laporan</b></label>
+                    <div id="drop-area" style="border: 2px dashed #007bff; padding: 20px; text-align: center;">
+                        <p>Seret dan lepas atau klik untuk memilih dokumen</p>
+                        <p><strong>Maksimal ukuran dokumen: 10 MB</strong></p>
+                        <input type="file" id="drag-upload" name="drag-upload" style="display: none;" />
+                        <button type="button" class="btn btn-primary" onclick="document.getElementById('drag-upload').click()">Pilih File</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal actions -->
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" onclick="document.getElementById('pemilik-dialog').close()" class="btn btn-secondary">Batal</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </form>
+    </dialog>
+
+</div>
+
+<script>
+    // Drag and Drop functionality
+    const dropArea = document.getElementById('drop-area');
+    const dragUploadInput = document.getElementById('drag-upload');
+
+    dropArea.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        dropArea.classList.add('highlight');
+    });
+
+    dropArea.addEventListener('dragleave', () => {
+        dropArea.classList.remove('highlight');
+    });
+
+    dropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        dropArea.classList.remove('highlight');
+        const files = event.dataTransfer.files;
+        if (files.length) {
+            dragUploadInput.files = files;
+            dropArea.innerHTML = <p>${ files[0].name } </p>;
+        }
+    });
+
+    dropArea.addEventListener('click', () => {
+        dragUploadInput.click();
+    });
+
+    dragUploadInput.addEventListener('change', () => {
+        const files = dragUploadInput.files;
+        if (files.length) {
+            dropArea.innerHTML = <p>${ files[0].name } </p>;
+        }
+    });
+</script>
+
+<style>
+    .bi-pencil-square {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='black'%20class='bi%20bi-pencil-square'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M15.502%201.94a.5.5%200%200%201%200%20.706L14.459%203.69l-2-2L13.502.646a.5.5%200%200%201%20.707%200l1.293%201.293zm-1.75%202.456l-2-2L4.939%209.21a.5.5%200%200%200-.121.196l-.805%202.414a.25.25%200%200%200%20.316.316l2.414-.805a.5.5%200%200%200%20.196-.12l6.813-6.814z'/%3E%3Cpath%20fill-rule='evenodd'%20d='M1%2013.5A1.5%201.5%200%200%200%202.5%2015h11a1.5%201.5%200%200%200%201.5-1.5v-6a.5.5%200%200%200-1%200v6a.5.5%200%200%201-.5.5h-11a.5.5%200%200%201-.5-.5v-11a.5.5%200%200%201%20.5-.5H9a.5.5%200%200%200%200-1H2.5A1.5%201.5%200%200%200%201%202.5z'/%3E%3C/svg%3E");
+        width: 16px; /* Tentukan lebar ikon */
+        height: 16px; /* Tentukan tinggi ikon */
+        background-size: contain; /* Menyesuaikan ukuran ikon */
+        display: inline-block; /* Mengubah elemen menjadi block untuk mendukung ukuran */
+        vertical-align: middle; /* Penempatan ikon dan teks sejajar secara vertikal */
+        border: none;
+    }
+
+</style>

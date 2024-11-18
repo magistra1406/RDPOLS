@@ -1,0 +1,246 @@
+﻿@page "/detailRDPpegawai"
+@attribute [StreamRendering]
+
+<PageTitle>Pelelangan RDP</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        @code {
+        [Parameter]
+        public int No { get; set; }
+
+        private LelangData? rdpData;
+
+        protected override void OnParametersSet()
+        {
+            rdpData = allData.FirstOrDefault(rdp => rdp.No == No);
+
+            if (rdpData == null)
+            {
+                rdpData = new LelangData
+                {
+                    No = 0,
+                    AlamatRumah = "Data tidak ditemukan",
+                    Points = 0,
+                    ImageUrl = "/images/house1.png"
+                };
+            }
+        }
+
+        private LelangData[] allData = new[]
+        {
+        new LelangData { No = 1, AlamatRumah = "Jl. Kalimantan No.1", Points = 150, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 2, AlamatRumah = "Jl. Bali No.2", Points = 250, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 3, AlamatRumah = "Jl. Sudirman No.3", Points = 100, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 4, AlamatRumah = "Jl. Sumatera No.4", Points = 200, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 5, AlamatRumah = "Jl. Jawa No.5", Points = 180, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 6, AlamatRumah = "Jl. Sulawesi No.6", Points = 220, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 7, AlamatRumah = "Jl. Papua No.7", Points = 160, ImageUrl = "/images/house1.png" },
+        new LelangData { No = 8, AlamatRumah = "Jl. Ambon No.8", Points = 300, ImageUrl = "/images/house1.png" }
+        };
+
+        public class LelangData
+        {
+            public int No { get; set; }
+            public string AlamatRumah { get; set; }
+            public int Points { get; set; }
+            public string ImageUrl { get; set; }
+        }
+
+        private bool showModal = false;
+        private string? selectedImageUrl;
+
+        private void ShowImage(string imageUrl)
+        {
+            selectedImageUrl = imageUrl;
+            showModal = true;
+        }
+
+        private void CloseModal()
+        {
+            showModal = false;
+            selectedImageUrl = null;
+        }
+        }
+
+        <div class="container mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="badge bg-light text-dark mb-2">
+                    <h1 class="page-title">Detail RDP</h1>
+                </div>
+                <div>
+                    <DialogNotif></DialogNotif>
+                </div>
+            </div>
+
+            <!-- Header container with vertical alignment -->
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Date on the left -->
+                <div class="col-md-6">
+                    <span class="badge bg-light text-dark mt-2" style="margin-bottom:15px">
+                        <span>
+                            <img src="/images/date-icon.png" style="height: 18px; width: 18px; margin-bottom: 2px; margin-right: 10px" />
+                        </span>
+                        @DateTime.Now.ToString("dddd, dd MMMM yyyy")
+                    </span>
+                </div>
+            </div>
+
+            <!-- Main Section -->
+            <div class="main-section">
+                <!-- Layout untuk Gambar -->
+                <div class="image-gallery">
+                    <!-- Gambar Utama dengan Periode Label di Atasnya -->
+                    <div class="main-image">
+                        <img src="@rdpData.ImageUrl" alt="Gambar Rumah" class="rdp-image" />
+                        <div class="period-label">
+                            Periode 30/09/2024 – 15/10/2024
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail Gambar Kecil -->
+                    <div class="thumbnail-images">
+                        @foreach (var item in allData)
+                        {
+                            <img src="@item.ImageUrl" alt="Gambar Thumbnail" class="thumbnail-image" @onclick="() => ShowImage(item.ImageUrl)" />
+                        }
+                    </div>
+                </div>
+
+                <!-- Right Section: Detail -->
+                <div class="detail-section-horizontal">
+                    <h2>Informasi RDP</h2>
+                    <div class="detail-item"><strong>Nomor RDP</strong>: GS-04</div>
+                    <div class="detail-item"><strong>Tipe Cluster</strong>: 4</div>
+                    <div class="detail-item"><strong>Jenis Hunian</strong>: Tersedia</div>
+                    <div class="detail-item"><strong>Terakhir Renovasi</strong>: 1 Januari 2024</div>
+                    <div class="detail-item"><strong>Alamat</strong>: Komperta Gunung Simping No. GS-04, Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah, 23224</div>
+                </div> <!-- Right Section End -->
+            </div> <!-- Main Section End -->
+            <!-- Image Modal -->
+            @if (showModal)
+            {
+                <div class="modal" @onclick="CloseModal">
+                    <div class="modal-content" @onclick:stopPropagation>
+                        <span class="close" @onclick="CloseModal">&times;</span>
+                        <img src="@selectedImageUrl" alt="Larger Image" class="modal-image" />
+                    </div>
+                </div>
+            }
+        </div> <!-- rdp-detail-container End -->
+
+        <style>
+            .main-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                width: 100%; /* Ensures it spans the full width of the container */
+            }
+
+            .image-gallery {
+                width: 100%; /* Full width */
+            }
+
+            .main-image {
+                position: relative;
+                width: 100%; /* Full width */
+                max-height: px; /* Adjust as necessary */
+                overflow: hidden;
+                margin: auto;
+            }
+
+
+            .main-image img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .period-label {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #ff4d4d;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .thumbnail-images {
+                display: flex;
+                gap: 15px;
+                overflow-x: auto;
+                max-width: 100%;
+                padding: 10px 0;
+            }
+
+            .thumbnail-image {
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: transform 0.3s;
+            }
+
+            .thumbnail-image:hover {
+                transform: scale(1.05);
+            }
+
+            .detail-section-horizontal {
+                background-color: #f9f9f9;
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%; /* Full width */
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            }
+
+
+            .detail-section-horizontal h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .detail-item {
+                font-size: 14px;
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+
+            .detail-item strong {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+
+            .modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 1000;
+            }
+
+            .modal-content {
+                background-color: white;
+                border-radius: 5px;
+                padding: 20px;
+                position: relative;
+            }
+
+            .modal-image {
+                width: 100;
+                
+        </style>
+    </Authorized>
+</AuthorizeView>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="TesBlazor1.styles.css" />
+    <link rel="icon" type="image/png" href="LogoPertamina.png" />
+    <script src="js/dialog.js"></script>
+    <script>
+        function showModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function hideModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        function openPegawaiModal() {
+            window.open('/tambahpegawai', 'Tambah Pegawai', 'width=800,height=600');
+        }
+    </script>
+
+    <style>
+        body {
+            background-image: url("/images/bg-main.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Tambahkan ini */
+            margin: 0; /* Menghapus margin default */
+            height: 100vh; /* Mengatur tinggi body */
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-botton: 2px
+        }
+    </style>
+
+    <HeadOutlet />
+</head>
+
+<body>
+    <Routes />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+
+</html>
